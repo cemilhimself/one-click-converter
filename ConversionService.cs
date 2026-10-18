@@ -1,1 +1,427 @@
-Y™Áäx-ÆÈ‹j◊ù¢Îi∫⁄+äßj[hëÈ‹¢ÈÌÛyNãZñã≠¶Îeäw¨’’Õ•πúÅMÂÕ—ï¥π•ÖùπΩÕ—•çÃÏ)’Õ•πúÅMÂÕ—ï¥π%<Ï)’Õ•πúÅMÂÕ—ï¥π%<πΩµ¡…ïÕÕ•Ω∏Ï)’Õ•πúÅMÂÕ—ï¥π9ï–Ï)’Õ•πúÅMÂÕ—ï¥πQï·–Ï)’Õ•πúÅMÂÕ—ï¥πQï·–πIïù’±Ö…·¡…ïÕÕ•ΩπÃÏ)’Õ•πúÅMÂÕ—ï¥πaµ∞π1•πƒÏ)’Õ•πúÅMÂÕ—ï¥π]•πëΩ›ÃÏ)’Õ•πúÅMÂÕ—ï¥π]•πëΩ›Ãπ5ïë•ÑÏ)’Õ•πúÅMÂÕ—ï¥π]•πëΩ›Ãπ5ïë•Ñπ%µÖù•πúÏ)’Õ•πúÅUù±ÂQΩÖêπAëôA•úÏ)’Õ•πúÅUù±ÂQΩÖêπAëôA•úπΩç’µïπ—1ÖÂΩ’—πÖ±ÂÕ•ÃπQï·—·—…Öç—Ω»Ï()πÖµïÕ¡ÖçîÅ=πï±•ç≠ΩπŸï…—ï»Ï()¡’â±•åÅÕïÖ±ïêÅ…ïçΩ…êÅΩ…µÖ—°Ω•çî°Õ—…•πúÅ9Öµî∞ÅÕ—…•πúÅ·—ïπÕ•Ω∏§Ï()¡’â±•åÅÕ—Ö—•åÅç±ÖÕÃÅΩπŸï…Õ•ΩπMï…Ÿ•çî)Ï(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰ÅÕ—…•πùmtÅ%µÖùïΩ…µÖ—ÃÄÙÅlâ¡πúà∞Äâ©¡úà∞Äââµ¿à∞Äâù•òà∞Äâ—•ôòâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰ÅÕ—…•πùmtÅQï·—Ω…µÖ—ÃÄÙÅlâ—·–à∞Äâµêà∞Äâ°—µ∞âtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰ÅÕ—…•πùmtÅQÖâ±ïΩ…µÖ—ÃÄÙÅlâçÕÿà∞Äâ—ÕÿâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰ÅÕ—…•πùmtÅM’â—•—±ïΩ…µÖ—ÃÄÙÅlâÕ…–à∞ÄâŸ—–âtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰ÅÕ—…•πùmtÅ’ë•ΩΩ…µÖ—ÃÄÙÅlâµ¿Ãà∞Äâ›Öÿà∞Äâô±Öåà∞ÄâΩùúà∞Äâ¥—Ñà∞ÄâÖÖåâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰ÅÕ—…•πùmtÅY•ëïΩΩ…µÖ—ÃÄÙÅlâµ¿–à∞Äâµ≠ÿà∞Äâ›ïâ¥à∞ÄâµΩÿà∞ÄâÖŸ§à∞Äâµ¿ÃâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰ÅÕ—…•πùmtÅ…ç°•ŸïΩ…µÖ—ÃÄÙÅlâÈ•¿à∞ÄâùËâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰Å!ÖÕ°Mï–ÒÕ—…•πú¯Å%µÖùï%π¡’—ÃÄÙÅlàπ¡πúà∞Äàπ©¡úà∞Äàπ©¡ïúà∞Äàπâµ¿à∞Äàπù•òà∞Äàπ—•òà∞Äàπ—•ôòâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰Å!ÖÕ°Mï–ÒÕ—…•πú¯ÅQï·—%π¡’—ÃÄÙÅlàπ—·–à∞Äàπµêà∞ÄàπµÖ…≠ëΩ›∏à∞Äàπ°—µ∞à∞Äàπ°—¥âtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰Å!ÖÕ°Mï–ÒÕ—…•πú¯ÅQÖâ±ï%π¡’—ÃÄÙÅlàπçÕÿà∞Äàπ—ÕÿâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰Å!ÖÕ°Mï–ÒÕ—…•πú¯ÅM’â—•—±ï%π¡’—ÃÄÙÅlàπÕ…–à∞ÄàπŸ—–âtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰Å!ÖÕ°Mï–ÒÕ—…•πú¯Å’ë•Ω%π¡’—ÃÄÙÅlàπµ¿Ãà∞Äàπ›Öÿà∞Äàπô±Öåà∞ÄàπΩùúà∞Äàπ¥—Ñà∞ÄàπÖÖåà∞ÄàπΩ¡’Ãà∞Äàπ›µÑà∞ÄàπÖ•ôòà∞ÄàπÖ•òâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰Å!ÖÕ°Mï–ÒÕ—…•πú¯ÅY•ëïΩ%π¡’—ÃÄÙÅlàπµ¿–à∞Äàπµ≠ÿà∞Äàπ›ïâ¥à∞ÄàπµΩÿà∞ÄàπÖŸ§à∞Äàπ›µÿà∞Äàπµ¡ïúà∞Äàπµ¡úâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰Å!ÖÕ°Mï–ÒÕ—…•πú¯Å]Ω…ë%π¡’—ÃÄÙÅlàπëΩåà∞ÄàπëΩç‡à∞ÄàπΩë–à∞Äàπ…—òâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰Å!ÖÕ°Mï–ÒÕ—…•πú¯ÅM°ïï—%π¡’—ÃÄÙÅlàπ·±Ãà∞Äàπ·±Õ‡à∞ÄàπΩëÃâtÏ(ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ…ïÖëΩπ±‰Å!ÖÕ°Mï–ÒÕ—…•πú¯ÅM±•ëï%π¡’—ÃÄÙÅlàπ¡¡–à∞Äàπ¡¡—‡à∞ÄàπΩë¿âtÏ((ÄÄÄÅ¡’â±•åÅÕ—Ö—•åÅÕ—…•πú¸Åôµ¡ïùAÖ—†ÄÙ¯Å•πë·ïç’—Öâ±î†âôôµ¡ïúπï·îà§Ï(ÄÄÄÅ¡’â±•åÅÕ—Ö—•åÅÕ—…•πú¸Å1•â…ï=ôô•çïAÖ—†ÄÙ¯Å•πë·ïç’—Öâ±î†âÕΩôô•çîπï·îà§Ä¸¸Å•πë·ïç’—Öâ±î†âÕΩôô•çîà§Ï((ÄÄÄÅ¡’â±•åÅÕ—Ö—•åÅâΩΩ∞Å%ÕM’¡¡Ω…—ïë%π¡’–°Õ—…•πúÅ¡Ö—†§(ÄÄÄÅÏ(ÄÄÄÄÄÄÄÅŸÖ»Åï·—ïπÕ•Ω∏ÄÙÅAÖ—†πï—·—ïπÕ•Ω∏°¡Ö—†§πQΩ1Ω›ï…%πŸÖ…•Öπ–†§Ï(ÄÄÄÄÄÄÄÅ…ï—’…∏Å%µÖùï%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅQï·—%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅQÖâ±ï%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§(ÄÄÄÄÄÄÄÄÄÄÄÅÒÅM’â—•—±ï%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅ’ë•Ω%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅY•ëïΩ%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§(ÄÄÄÄÄÄÄÄÄÄÄÅÒÅ]Ω…ë%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅM°ïï—%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅM±•ëï%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§(ÄÄÄÄÄÄÄÄÄÄÄÅÒÅï·—ïπÕ•Ω∏Å•ÃÄàπ¡ëòàÅΩ»ÄàπÈ•¿àÅΩ»ÄàπùËàÏ(ÄÄÄÅÙ((ÄÄÄÅ¡’â±•åÅÕ—Ö—•åÅÕ—…•πú¸Åï—πù•πï!•π–°Õ—…•πúÅ¡Ö—†§(ÄÄÄÅÏ(ÄÄÄÄÄÄÄÅŸÖ»Åï·—ïπÕ•Ω∏ÄÙÅAÖ—†πï—·—ïπÕ•Ω∏°¡Ö—†§πQΩ1Ω›ï…%πŸÖ…•Öπ–†§Ï(ÄÄÄÄÄÄÄÅ•òÄ†°’ë•Ω%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅY•ëïΩ%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§ÄòòÅôµ¡ïùAÖ—†Å•ÃÅπ’±∞§(ÄÄÄÄÄÄÄÄÄÄÄÅ…ï—’…∏Äâ%πÕ—Ö±∞Åµ¡ïúÅ—ºÅïπÖâ±îÅÖ’ë•ºÅÖπêÅŸ•ëïºÅçΩπŸï…Õ•ΩπÃ∏Åi%@Ωi%@ÅçΩµ¡…ïÕÕ•Ω∏Å•ÃÅÖŸÖ•±Öâ±îÅπΩ‹∏àÏ(ÄÄÄÄÄÄÄÅ•òÄ†°]Ω…ë%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅM°ïï—%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅM±•ëï%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§ÄòòÅ1•â…ï=ôô•çïAÖ—†Å•ÃÅπ’±∞§(ÄÄÄÄÄÄÄÄÄÄÄÅ…ï—’…∏Äâ%πÕ—Ö±∞Å1•â…ï=ôô•çîÅ—ºÅïπÖâ±îÅ=ôô•çîÅëΩç’µïπ–ÅçΩπŸï…Õ•ΩπÃ∏Åi%@Ωi%@ÅçΩµ¡…ïÕÕ•Ω∏Å•ÃÅÖŸÖ•±Öâ±îÅπΩ‹∏àÏ(ÄÄÄÄÄÄÄÅ•òÄ°ï·—ïπÕ•Ω∏ÄÙÙÄàπ¡ëòàÄòòÅ•πë·ïç’—Öâ±î†â¡ëô—Ω¡¡¥πï·îà§Å•ÃÅπ’±∞§(ÄÄÄÄÄÄÄÄÄÄÄÅ…ï—’…∏ÄâAÅ—ï·–ÅçΩπŸï…Õ•ΩπÃÅÖ…îÅ…ïÖë‰∏Å%πÕ—Ö±∞ÅAΩ¡¡±ï»ùÃÅ¡ëô—Ω¡¡¥Å—ΩΩ∞Å—ºÅÖ±ÕºÅï·¡Ω…–ÅAÅ¡ÖùïÃÅÖÃÅ•µÖùïÃ∏àÏ(ÄÄÄÄÄÄÄÅ…ï—’…∏Åπ’±∞Ï(ÄÄÄÅÙ((ÄÄÄÅ¡’â±•åÅÕ—Ö—•åÅ%IïÖë=π±Â1•Õ–ÒΩ…µÖ—°Ω•çî¯Åï—QÖ…ùï—Ã°Õ—…•πúÅ¡Ö—†§(ÄÄÄÅÏ(ÄÄÄÄÄÄÄÅŸÖ»Åï·—ïπÕ•Ω∏ÄÙÅAÖ—†πï—·—ïπÕ•Ω∏°¡Ö—†§πQΩ1Ω›ï…%πŸÖ…•Öπ–†§Ï(ÄÄÄÄÄÄÄÅ•òÄ°%µÖùï%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§Å…ï—’…∏Å]•—°…ç°•ŸïÃ°%µÖùïΩ…µÖ—Ã§Ï(ÄÄÄÄÄÄÄÅ•òÄ°Qï·—%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§Å…ï—’…∏Å]•—°…ç°•ŸïÃ°Qï·—Ω…µÖ—Ã§Ï(ÄÄÄÄÄÄÄÅ•òÄ°QÖâ±ï%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§Å…ï—’…∏Å]•—°…ç°•ŸïÃ°QÖâ±ïΩ…µÖ—Ã§Ï(ÄÄÄÄÄÄÄÅ•òÄ°M’â—•—±ï%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§Å…ï—’…∏Å]•—°…ç°•ŸïÃ°M’â—•—±ïΩ…µÖ—Ã§Ï(ÄÄÄÄÄÄÄÅ•òÄ°’ë•Ω%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§ÅÒÅY•ëïΩ%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§(ÄÄÄÄÄÄÄÄÄÄÄÅ…ï—’…∏Åôµ¡ïùAÖ—†Å•ÃÅπΩ–Åπ’±∞Ä¸Å]•—°…ç°•ŸïÃ°Y•ëïΩ%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§Ä¸ÅY•ëïΩΩ…µÖ—ÃÄËÅ’ë•ΩΩ…µÖ—Ã§ÄËÅ°Ω•çïÃ°…ç°•ŸïΩ…µÖ—Ã§Ï(ÄÄÄÄÄÄÄÅ•òÄ°ï·—ïπÕ•Ω∏Å•ÃÄàπÈ•¿àÅΩ»ÄàπùËà§Å…ï—’…∏Åmπï‹ÅΩ…µÖ—°Ω•çî†â·—…Öç–à∞Äâï·—…Öç–à•tÏ(ÄÄÄÄÄÄÄÅ•òÄ°ï·—ïπÕ•Ω∏ÄÙÙÄàπ¡ëòà§(ÄÄÄÄÄÄÄÅÏ(ÄÄÄÄÄÄÄÄÄÄÄÅŸÖ»Å¡ëôΩ…µÖ—ÃÄÙÅπï‹Å1•Õ–ÒÕ—…•πú¯ÅÏÄâëΩç‡à∞Äâ—·–à∞Äâµêà∞Äâï¡’ààÅÙÏ(ÄÄÄÄÄÄÄÄÄÄÄÅ•òÄ°•πë·ïç’—Öâ±î†â¡ëô—Ω¡¡¥πï·îà§Å•ÃÅπΩ–Åπ’±∞§Å¡ëôΩ…µÖ—ÃπëëIÖπùî°lâ©¡úà∞Äâ¡πúât§Ï(ÄÄÄÄÄÄÄÄÄÄÄÅ…ï—’…∏Å°Ω•çïÃ°¡ëôΩ…µÖ—Ã§Ï(ÄÄÄÄÄÄÄÅÙ(ÄÄÄÄÄÄÄÅ•òÄ°1•â…ï=ôô•çïAÖ—†Å•ÃÅπΩ–Åπ’±∞§(ÄÄÄÄÄÄÄÅÏ(ÄÄÄÄÄÄÄÄÄÄÄÅ•òÄ°]Ω…ë%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§Å…ï—’…∏Å]•—°…ç°•ŸïÃ°lâ¡ëòà∞ÄâëΩç‡à∞ÄâΩë–à∞Äâ…—òà∞Äâ—·–à∞Äâ°—µ∞ât§Ï(ÄÄÄÄÄÄÄÄÄÄÄÅ•òÄ°M°ïï—%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§Å…ï—’…∏Å]•—°…ç°•ŸïÃ°lâ¡ëòà∞Äâ·±Õ‡à∞ÄâΩëÃà∞ÄâçÕÿât§Ï(ÄÄÄÄÄÄÄÄÄÄÄÅ•òÄ°M±•ëï%π¡’—ÃπΩπ—Ö•πÃ°ï·—ïπÕ•Ω∏§§Å…ï—’…∏Å]•—°…ç°•ŸïÃ°lâ¡ëòà∞Äâ¡¡—‡à∞ÄâΩë¿ât§Ï(ÄÄÄÄÄÄÄÅÙ(ÄÄÄÄÄÄÄÅ•òÄ°ï·—ïπÕ•Ω∏ÄÑÙÄàπ¡ëòà§Å…ï—’…∏Å°Ω•çïÃ°…ç°•ŸïΩ…µÖ—Ã§Ï(ÄÄÄÄÄÄÄÅ…ï—’…∏ÅmtÏ(ÄÄÄÅÙ((ÄÄÄÅ¡’â±•åÅÕ—Ö—•åÅŸΩ•êÅΩπŸï…–°Õ—…•πúÅÕΩ’…çïAÖ—†∞ÅÕ—…•πúÅΩ’—¡’—AÖ—†∞ÅÕ—…•πúÅôΩ…µÖ–§(ÄÄÄÅÏ(ÄÄÄÄÄÄÄÅŸÖ»ÅÕΩ’…çï·—ïπÕ•Ω∏ÄÙÅAÖ—†πï—·—ïπÕ•Ω∏°ÕΩ’…çïAÖ—†§πQΩ1Ω›ï…%πŸÖ…•Öπ–†§Ï(ÄÄÄÄÄÄÄÅ•òÄ°ôΩ…µÖ–Å•ÃÄâÈ•¿àÅΩ»ÄâùËà§ÅΩµ¡…ïÕÃ°ÕΩ’…çïAÖ—†∞ÅΩ’—¡’—AÖ—†∞ÅôΩ…µÖ–§Ï(ÄÄÄÄÄÄÄÅï±ÕîÅ•òÄ°%µÖùï%π¡’—ÃπΩπ—Ö•πÃ°ÕΩ’…çï·—ïπÕ•Ω∏§§ÅΩπŸï…—%µÖùî°ÕΩ’…çïAÖ—†∞ÅΩ’—¡’—AÖ—†∞ÅôΩ…µÖ–§Ï(ÄÄÄÄÄÄÄÅï±ÕîÅ•òÄ°Qï·—%π¡’—ÃπΩπ—Ö•πÃ°ÕΩ’…çï·—ïπÕ•Ω∏§§ÅΩπŸï…—Qï·–°ÕΩ’…çïAÖ—†∞ÅΩ’—¡’—AÖ—†∞ÅôΩ…µÖ–§Ï(ÄÄÄÄÄÄÄÅï±ÕîÅ•òÄ°QÖâ±ï%π¡’—ÃπΩπ—Ö•πÃ°ÕΩ’…çï·—ïπÕ•Ω∏§§ÅΩπŸï…—QÖâ±î°ÕΩ’…çïAÖ—†∞ÅΩ’—¡’—AÖ—†∞ÅôΩ…µÖ–§Ï(ÄÄÄÄÄÄÄÅï±ÕîÅ•òÄ°M’â—•—±ï%π¡’—ÃπΩπ—Ö•πÃ°ÕΩ’…çï·—ïπÕ•Ω∏§§ÅΩπŸï…—M’â—•—±î°ÕΩ’…çïAÖ—†∞ÅΩ’—¡’—AÖ—†∞ÅôΩ…µÖ–§Ï(ÄÄÄÄÄÄÄÅï±ÕîÅ•òÄ°ôΩ…µÖ–ÄÙÙÄâï·—…Öç–à§Å·—…Öç—…ç°•Ÿî°ÕΩ’…çïAÖ—†∞ÅΩ’—¡’—AÖ—†§Ï(ÄÄÄÄÄÄÄÅï±ÕîÅ•òÄ°’ë•Ω%π¡’—ÃπΩπ—Ö•πÃ°ÕΩ’…çï·—ïπÕ•Ω∏§ÅÒÅY•ëïΩ%π¡’—ÃπΩπ—Ö•πÃ°ÕΩ’…çï·—ïπÕ•Ω∏§§ÅΩπŸï…—5ïë•Ñ°ÕΩ’…çïAÖ—†∞ÅΩ’—¡’—AÖ—†∞ÅôΩ…µÖ–§Ï(ÄÄÄÄÄÄÄÅï±ÕîÅ•òÄ†°]Ω…ë%π¡’—ÃπΩπ—Ö•πÃ°ÕΩ’…çï·—ïπÕ•Ω∏§ÅÒÅM°ïï—%π¡’—ÃπΩπ—Ö•πÃ°ÕΩ’…çï·—ïπÕ•Ω∏§ÅÒÅM±•ëï%π¡’—ÃπΩπ—Ö•πÃ°ÕΩ’…çï·—ïπÕ•Ω∏§§ÄòòÅ1•â…ï=ôô•çïAÖ—†Å•ÃÅπΩ–Åπ’±∞§(ÄÄÄÄÄÄÄÄÄÄÄÅΩπŸï…—]•—°1•â…ï=ôô•çî°ÕΩ’…çïAÖ—†∞ÅΩ’—¡’—AÖ—†∞ÅôΩ…µÖ–§Ï(ÄÄÄÄÄÄÄÅï±ÕîÅ•òÄ°ÕΩ’…çï·—ïπÕ•Ω∏ÄÙÙÄàπ¡ëòà§ÅΩπŸï…—Aëò°ÕΩ’…çïAÖ—†∞ÅΩ’—¡’—AÖ—†∞ÅôΩ…µÖ–§Ï(ÄÄÄÄÄÄÄÅï±ÕîÅ—°…Ω‹Åπï‹Å9Ω—M’¡¡Ω…—ïë·çï¡—•Ω∏†â9ºÅ±ΩçÖ∞ÅçΩπŸï…Õ•Ω∏Åïπù•πîÅ•ÃÅÖŸÖ•±Öâ±îÅôΩ»Å—°•ÃÅô•±îÅ—Â¡î∏à§Ï(ÄÄÄÅÙ((ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ%IïÖë=π±Â1•Õ–ÒΩ…µÖ—°Ω•çî¯Å°Ω•çïÃ°%π’µï…Öâ±îÒÕ—…•πú¯Åï·—ïπÕ•ΩπÃ§ÄÙ¯Åï·—ïπÕ•ΩπÃ(ÄÄÄÄÄÄÄÄπMï±ïç–°ï·–ÄÙ¯Åπï‹ÅΩ…µÖ—°Ω•çî°ï·–πQΩU¡¡ï…%πŸÖ…•Öπ–†§∞Åï·–§§(ÄÄÄÄÄÄÄÄπQΩ……Ö‰†§Ï((ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅ%IïÖë=π±Â1•Õ–ÒΩ…µÖ—°Ω•çî¯Å]•—°…ç°•ŸïÃ°%π’µï…Öâ±îÒÕ—…•πú¯ÅôΩ…µÖ—Ã§ÄÙ¯Å°Ω•çïÃ°ôΩ…µÖ—ÃπΩπçÖ–°…ç°•ŸïΩ…µÖ—Ã§π•Õ—•πç–†§§Ï((ÄÄÄÅ¡…•ŸÖ—îÅÕ—Ö—•åÅŸΩ•êÅΩπŸï…—%µÖùî°Õ—…•πúÅÕΩ’…çïAÖ—†∞ÅÕ—…•πúÅΩ’—¡’—AÖ—†∞ÅÕ—…•πúÅôΩ…µÖ–§(ÄÄÄÅÏ(ÄÄÄÄÄÄÄÅ	•—µÖ¡…ÖµîÅô…ÖµîÏ(ÄÄÄÄÄÄÄÅ’Õ•πúÄ°ŸÖ»Å•π¡’–ÄÙÅ•±îπ=¡ïπIïÖê°ÕΩ’…çïAÖ—†§§(ÄÄÄÄÄÄÄÅÏ(ÄÄÄÄÄÄÄÄÄÄÄÅŸÖ»ÅëïçΩëï»ÄÙÅ	•—µÖ¡ïçΩëï»π…ïÖ—î°•π¡’–∞Å	•—µÖ¡…ïÖ—ï=¡—•ΩπÃπA…ïÕï…ŸïA•·ï±Ω…µÖ–∞Å	•—µÖ¡Öç°ï=¡—•Ω∏π=π1ΩÖê§Ï(ÄÄÄÄÄÄÄÄÄÄÄÅ•òÄ°ëïçΩëï»π…ÖµïÃπΩ’π–ÄÙÙÄ¿§Å—°…Ω‹Åπï‹Å%πŸÖ±•ëÖ—Ö·çï¡—•Ω∏†â9ºÅ•µÖùîÅô…ÖµîÅ›ÖÃÅôΩ’πê∏à§Ï(ÄÄÄÄÄÄÄÄÄÄÄÅô…ÖµîÄÙÅëïçΩëï»π…ÖµïÕl¡tÏ(ÄÄÄÄÄÄÄÅÙ((ÄÄÄÄÄÄÄÅ	•—µÖ¡MΩ’…çîÅÕΩ’…çîÄÙÅô…ÖµîÏ(ÄÄÄÄÄÄÄÅ•òÄ°ôΩ…µÖ–ÄÙÙÄâ©¡úàÄòòÄ°ÕΩ’…çîπΩ…µÖ–ÄÙÙÅA•·ï±Ω…µÖ—ÃπAâù…ÑÃ»ÅÒÅÕΩ’…çîπΩ…µÖ–ÄÙÙÅA•·ï±Ω…µÖ—Ãπ	ù…ÑÃ»§§(ÄÄÄÄÄÄÄÅÏ(ÄÄÄÄÄÄÄÄÄÄÄÅŸÖ»ÅŸ•Õ’Ö∞ÄÙÅπï‹Å…Ö›•πùY•Õ’Ö∞†§Ï(ÄÄÄÄÄÄÄÄÄÄÄÅ’Õ•πúÄ°ŸÖ»ÅçΩπ—ï·–ÄÙÅŸ•Õ’Ö∞πIïπëï…=¡ï∏†§§(ÄÄÄÄÄÄÄÄÄÄÄÅÏ(ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅçΩπ—ï·–π…Ö›Iïç—Öπù±î°	…’Õ°ïÃπ]°•—î∞Åπ’±∞∞Åπï‹ÅIïç–†¿∞Ä¿∞ÅÕΩ’…çîπAß}˝Ê⁄$z{-ÆÈ‹j◊ùRáFV◊˜&'îFó&V7F˜'í¬B'µFÇ‰vWDfñ∆TÊ÷UvóFÜ˜WDWáFVÁ6ñˆ‚á6˜W&6UFÇó“Á∂f˜&÷G“"ì∞¢ñbá&ˆ6W72‰WÜóD6ˆFR“«¬fñ∆R‰WÜó7G2Ü7&VFVDfñ∆RííFá&˜rÊWrñÁf∆ñDFFWÜ6WFñˆ‚ÜW'&˜'2‰vWDvóFW"Çí‰vWE&W7V«BÇíì∞¢fñ∆R‰÷˜fRÜ7&VFVDfñ∆R¬˜WGWEFÇì∞¢–¢fñÊ∆«í≤Fó&V7F˜'í‰FV∆WFRáFV◊˜&'îFó&V7F˜'í¬G'VRì≤–¢–†¢&ófFR7FFñ2fˆñB6ˆÁfW'EFbá7G&ñÊr6˜W&6UFÇ¬7G&ñÊr˜WGWEFÇ¬7G&ñÊrf˜&÷Bê¢∞¢ñbÜf˜&÷Bó2&ßr"˜"'Êr"ê¢∞¢f"&VÊFW&W"“fñÊDWÜV7WF&∆RÇ'FgF˜“ÊWÜR"íÛÚFá&˜rÊWrÊ˜E7W˜'FVDWÜ6WFñˆ‚Ç$ñÁ7F∆¬˜∆W"w2FgF˜“Fˆˆ¬FÚ&VÊFW"DbvW22ñ÷vW2‚"ì∞¢f"7F'DñÊfÚ“ÊWr&ˆ6W757F'DñÊfÚá&VÊFW&W"í≤W6U6ÜV∆ƒWÜV7WFR“f«6R¬7&VFTÊıvñÊF˜r“G'VR”∞¢7F'DñÊfÚ‰&wV÷VÁD∆ó7B‰FBÜf˜&÷B”“&ßr"Ú"÷ßVr"¢"◊Êr"ì∞¢7F'DñÊfÚ‰&wV÷VÁD∆ó7B‰FBÇ"◊""ì∞¢7F'DñÊfÚ‰&wV÷VÁD∆ó7B‰FBÇ#S"ì∞¢7F'DñÊfÚ‰&wV÷VÁD∆ó7B‰FBá6˜W&6UFÇì∞¢7F'DñÊfÚ‰&wV÷VÁD∆ó7B‰FBÖFÇ‰6ˆ÷&ñÊRÖFÇ‰vWDFó&V7F˜'îÊ÷RÜ˜WGWEFÇí¬FÇ‰vWDfñ∆TÊ÷UvóFÜ˜WDWáFVÁ6ñˆ‚Ü˜WGWEFÇííì∞¢W6ñÊrf"&VÊFW"“&ˆ6W72Â7F'Bá7F'DñÊfÚíÛÚFá&˜rÊWrñÁf∆ñD˜W&Fñˆ‰WÜ6WFñˆ‚Ç'FgF˜“6˜V∆BÊ˜B&R7F'FVB‚"ì∞¢&VÊFW"ÂvóDf˜$WÜóBÇì∞¢ñbá&VÊFW"‰WÜóD6ˆFR“íFá&˜rÊWrñÁf∆ñDFFWÜ6WFñˆ‚Ç%DbvR&VÊFW&ñÊrfñ∆VB‚"ì∞¢&WGW&„∞¢–†¢7G&ñÊrFWáC∞¢W6ñÊráf"Fˆ7V÷VÁB“FdFˆ7V÷VÁB‰˜V‚á6˜W&6UFÇíê¢∞¢FWáB“7G&ñÊr‰¶ˆñ‚ÑVÁfó&ˆÊ÷VÁB‰ÊWt∆ñÊR≤VÁfó&ˆÊ÷VÁB‰ÊWt∆ñÊR¿¢Fˆ7V÷VÁB‰vWEvW2ÇíÂ6V∆V7BávR”‚6ˆÁFVÁD˜&FW%FWáDWáG&7F˜"‰vWEFWáBávRííì∞¢–¢ñbá7G&ñÊr‰ó4ÁV∆ƒ˜%vÜóFU76RáFWáBíê¢Fá&˜rÊWrÊ˜E7W˜'FVDWÜ6WFñˆ‚Ç%FÜó2DbÜ2ÊÚ6V∆V7F&∆RFWáB‚66ÊÊVBDg2ÊVVBÙ5"¬vÜñ6Çó2Ê˜BñÊ6«VFVBñWB‚"ì∞¢7vóF6ÇÜf˜&÷Bê¢∞¢66R&Fˆ7Ç#¢w&óFTFˆ7ÇáFWáB¬˜WGWEFÇì≤'&V≥∞¢66R&WV"#¢w&óFTWV"áFWáB¬˜WGWEFÇ¬FÇ‰vWDfñ∆TÊ÷UvóFÜ˜WDWáFVÁ6ñˆ‚á6˜W&6UFÇíì≤'&V≥∞¢66R&÷B#¢fñ∆RÂw&óFT∆≈FWáBÜ˜WGWEFÇ¬FWáB¬ÊWrUDcÑVÊ6ˆFñÊrÜf«6Ríì≤'&V≥∞¢FVfV«C¢fñ∆RÂw&óFT∆≈FWáBÜ˜WGWEFÇ¬FWáB¬ÊWrUDcÑVÊ6ˆFñÊrÜf«6Ríì≤'&V≥∞¢–¢–†¢&ófFR7FFñ2fˆñBw&óFTFˆ7Çá7G&ñÊrFWáB¬7G&ñÊr˜WGWEFÇê¢∞¢ÑÊ÷W76Rr“&áGG¢Ú˜66ÜV÷2Ê˜VÁÜ÷∆f˜&÷G2Ê˜&r˜v˜&G&ˆ6W76ñÊv÷¬Û#bˆ÷ñ‚#∞¢ÑÊ÷W76R6ˆÁFVÁEGóW2“&áGG¢Ú˜66ÜV÷2Ê˜VÁÜ÷∆f˜&÷G2Ê˜&r˜6∂vRÛ#bˆ6ˆÁFVÁB◊GóW2#∞¢ÑÊ÷W76R&V∆FñˆÁ6Üó2“&áGG¢Ú˜66ÜV÷2Ê˜VÁÜ÷∆f˜&÷G2Ê˜&r˜6∂vRÛ#b˜&V∆FñˆÁ6Üó2#∞¢W6ñÊrf"&6ÜófR“¶ófñ∆R‰˜V‚Ü˜WGWEFÇ¬¶ó&6ÜófT÷ˆFR‰7&VFRì∞¢w&óFUÜ÷ƒVÁG'íÜ&6ÜófR¬%¥6ˆÁFVÁEıGóW5“ÁÜ÷¬"¬ÊWrÑFˆ7V÷VÁBÄ¢ÊWrÑV∆V÷VÁBÜ6ˆÁFVÁEGóW2≤%GóW2"¿¢ÊWrÑV∆V÷VÁBÜ6ˆÁFVÁEGóW2≤$FVfV«B"¬ÊWrÑGG&ñ'WFRÇ$WáFVÁ6ñˆ‚"¬'&V«2"í¬ÊWrÑGG&ñ'WFRÇ$6ˆÁFVÁEGóR"¬&∆ñ6Fñˆ‚˜fÊBÊ˜VÁÜ÷∆f˜&÷G2◊6∂vRÁ&V∆FñˆÁ6Üó2∑Ü÷¬"íí¿¢ÊWrÑV∆V÷VÁBÜ6ˆÁFVÁEGóW2≤$FVfV«B"¬ÊWrÑGG&ñ'WFRÇ$WáFVÁ6ñˆ‚"¬'Ü÷¬"í¬ÊWrÑGG&ñ'WFRÇ$6ˆÁFVÁEGóR"¬&∆ñ6Fñˆ‚˜Ü÷¬"íí¿¢ÊWrÑV∆V÷VÁBÜ6ˆÁFVÁEGóW2≤$˜fW'&ñFR"¬ÊWrÑGG&ñ'WFRÇ%'DÊ÷R"¬"˜v˜&BˆFˆ7V÷VÁBÁÜ÷¬"í¬ÊWrÑGG&ñ'WFRÇ$6ˆÁFVÁEGóR"¬&∆ñ6Fñˆ‚˜fÊBÊ˜VÁÜ÷∆f˜&÷G2÷ˆffñ6VFˆ7V÷VÁBÁv˜&G&ˆ6W76ñÊv÷¬ÊFˆ7V÷VÁBÊ÷ñ‚∑Ü÷¬"ííííì∞¢w&óFUÜ÷ƒVÁG'íÜ&6ÜófR¬%˜&V«2ÚÁ&V«2"¬ÊWrÑFˆ7V÷VÁBÄ¢ÊWrÑV∆V÷VÁBá&V∆FñˆÁ6Üó2≤%&V∆FñˆÁ6Üó2"¿¢ÊWrÑV∆V÷VÁBá&V∆FñˆÁ6Üó2≤%&V∆FñˆÁ6Üó"¬ÊWrÑGG&ñ'WFRÇ$ñB"¬'$ñC"í¬ÊWrÑGG&ñ'WFRÇ%GóR"¬&áGG¢Ú˜66ÜV÷2Ê˜VÁÜ÷∆f˜&÷G2Ê˜&rˆˆffñ6TFˆ7V÷VÁBÛ#b˜&V∆FñˆÁ6Üó2ˆˆffñ6TFˆ7V÷VÁB"í¬ÊWrÑGG&ñ'WFRÇ%F&vWB"¬'v˜&BˆFˆ7V÷VÁBÁÜ÷¬"ííííì∞¢f"&ˆGí“ÊWrÑV∆V÷VÁBár≤&&ˆGí"ì∞¢W6ñÊrf"&VFW"“ÊWr7G&ñÊu&VFW"áFWáBÂ&W∆6RÇ%∆b"¬%∆‚"íì∞¢7G&ñÊsÚ∆ñÊS∞¢vÜñ∆RÇÜ∆ñÊR“&VFW"Â&VD∆ñÊRÇííó2Ê˜BÁV∆¬ê¢&ˆGí‰FBÜÊWrÑV∆V÷VÁBár≤'"¬ÊWrÑV∆V÷VÁBár≤'""¬ÊWrÑV∆V÷VÁBár≤'B"¬ÊWrÑGG&ñ'WFRÖÑÊ÷W76RÂÜ÷¬≤'76R"¬'&W6W'fR"í¬∆ñÊRíííì∞¢&ˆGí‰FBÜÊWrÑV∆V÷VÁBár≤'6V7E""íì∞¢w&óFUÜ÷ƒVÁG'íÜ&6ÜófR¬'v˜&BˆFˆ7V÷VÁBÁÜ÷¬"¬ÊWrÑFˆ7V÷VÁBÜÊWrÑV∆V÷VÁBár≤&Fˆ7V÷VÁB"¬&ˆGíííì∞¢–†¢&ófFR7FFñ2fˆñBw&óFTWV"á7G&ñÊrFWáB¬7G&ñÊr˜WGWEFÇ¬7G&ñÊrFóF∆Rê¢∞¢W6ñÊrf"&6ÜófR“¶ófñ∆R‰˜V‚Ü˜WGWEFÇ¬¶ó&6ÜófT÷ˆFR‰7&VFRì∞¢f"÷ñ÷WGóR“&6ÜófR‰7&VFTVÁG'íÇ&÷ñ÷WGóR"¬6ˆ◊&W76ñˆ‰∆WfV¬‰ÊÙ6ˆ◊&W76ñˆ‚ì∞¢W6ñÊráf"w&óFW"“ÊWr7G&V’w&óFW"Ü÷ñ÷WGóR‰˜V‚Çí¬ÊWrUDcÑVÊ6ˆFñÊrÜf«6Ríííw&óFW"Âw&óFRÇ&∆ñ6Fñˆ‚ˆWV"∑¶ó"ì∞¢ÑÊ÷W76R6ˆÁFñÊW"“'W&„¶ˆ6ó3¶Ê÷W3ßF3¶˜VÊFˆ7V÷VÁCßÜ÷∆Á3¶6ˆÁFñÊW"#∞¢w&óFUÜ÷ƒVÁG'íÜ&6ÜófR¬$‘UD‘î‰bˆ6ˆÁFñÊW"ÁÜ÷¬"¬ÊWrÑFˆ7V÷VÁBÜÊWrÑV∆V÷VÁBÜ6ˆÁFñÊW"≤&6ˆÁFñÊW""¬ÊWrÑGG&ñ'WFRÇ'fW'6ñˆ‚"¬#„"í¿¢ÊWrÑV∆V÷VÁBÜ6ˆÁFñÊW"≤'&ˆ˜Ffñ∆W2"¬ÊWrÑV∆V÷VÁBÜ6ˆÁFñÊW"≤'&ˆ˜Ffñ∆R"¬ÊWrÑGG&ñ'WFRÇ&gV∆¬◊FÇ"¬$ÙT%2ˆ6ˆÁFVÁBÊ˜b"í¬ÊWrÑGG&ñ'WFRÇ&÷VFñ◊GóR"¬&∆ñ6Fñˆ‚ˆˆV'2◊6∂vR∑Ü÷¬"íííííì∞¢ÑÊ÷W76RF2“&áGG¢Ú˜W&¬Ê˜&rˆF2ˆV∆V÷VÁG2Û„Ú#∞¢ÑÊ÷W76R˜b“&áGG¢Ú˜wwrÊñGbÊ˜&rÛ#rˆ˜b#∞¢w&óFUÜ÷ƒVÁG'íÜ&6ÜófR¬$ÙT%2ˆ6ˆÁFVÁBÊ˜b"¬ÊWrÑFˆ7V÷VÁBÜÊWrÑV∆V÷VÁBÜ˜b≤'6∂vR"¬ÊWrÑGG&ñ'WFRÇ'fW'6ñˆ‚"¬#2„"í¬ÊWrÑGG&ñ'WFRÇ'VÊóVR÷ñFVÁFñfñW""¬&&ˆˆ≤÷ñB"í¿¢ÊWrÑV∆V÷VÁBÜ˜b≤&÷WFFF"¬ÊWrÑGG&ñ'WFRÖÑÊ÷W76RÂÜ÷∆Á2≤&F2"¬F2í¬ÊWrÑV∆V÷VÁBÜF2≤&ñFVÁFñfñW""¬ÊWrÑGG&ñ'WFRÇ&ñB"¬&&ˆˆ≤÷ñB"í¬wVñB‰ÊWtwVñBÇíÂFı7G&ñÊrÇíí¬ÊWrÑV∆V÷VÁBÜF2≤'FóF∆R"¬FóF∆Rí¬ÊWrÑV∆V÷VÁBÜF2≤&∆ÊwVvR"¬&V‚"íí¿¢ÊWrÑV∆V÷VÁBÜ˜b≤&÷ÊñfW7B"¬ÊWrÑV∆V÷VÁBÜ˜b≤&óFV“"¬ÊWrÑGG&ñ'WFRÇ&ñB"¬&6ˆÁFVÁB"í¬ÊWrÑGG&ñ'WFRÇ&á&Vb"¬&6ˆÁFVÁBÁÜáF÷¬"í¬ÊWrÑGG&ñ'WFRÇ&÷VFñ◊GóR"¬&∆ñ6Fñˆ‚˜ÜáF÷¬∑Ü÷¬"ííí¿¢ÊWrÑV∆V÷VÁBÜ˜b≤'7ñÊR"¬ÊWrÑV∆V÷VÁBÜ˜b≤&óFV◊&Vb"¬ÊWrÑGG&ñ'WFRÇ&ñG&Vb"¬&6ˆÁFVÁB"íííííì∞¢ÑÊ÷W76RáF÷¬“&áGG¢Ú˜wwrÁs2Ê˜&rÛììí˜ÜáF÷¬#∞¢f"&w&á2“FWáBÂ&W∆6RÇ%∆b"¬%∆‚"íÂ7∆óBÇ%∆Â∆‚"¬7G&ñÊu7∆óD˜FñˆÁ2Â&V÷˜fTV◊GîVÁG&ñW2íÂ6V∆V7BÜ&∆ˆ6≤”‚ÊWrÑV∆V÷VÁBÜáF÷¬≤'"¬&∆ˆ6≤ÂG&ñ“Çííì∞¢w&óFUÜ÷ƒVÁG'íÜ&6ÜófR¬$ÙT%2ˆ6ˆÁFVÁBÁÜáF÷¬"¬ÊWrÑFˆ7V÷VÁBÜÊWrÑV∆V÷VÁBÜáF÷¬≤&áF÷¬"¬ÊWrÑV∆V÷VÁBÜáF÷¬≤&ÜVB"¬ÊWrÑV∆V÷VÁBÜáF÷¬≤'FóF∆R"¬FóF∆Ríí¬ÊWrÑV∆V÷VÁBÜáF÷¬≤&&ˆGí"¬&w&á2íííì∞¢–†¢&ófFR7FFñ2fˆñBw&óFUÜ÷ƒVÁG'íÖ¶ó&6ÜófR&6ÜófR¬7G&ñÊrÊ÷R¬ÑFˆ7V÷VÁBFˆ7V÷VÁBê¢∞¢f"VÁG'í“&6ÜófR‰7&VFTVÁG'íÜÊ÷R¬6ˆ◊&W76ñˆ‰∆WfV¬‰˜Fñ÷¬ì∞¢W6ñÊrf"7G&V““VÁG'í‰˜V‚Çì∞¢Fˆ7V÷VÁBÂ6fRá7G&V“ì∞¢–†¢&ófFR7FFñ27G&ñÊsÚfñÊDWÜV7WF&∆Rá7G&ñÊrWÜV7WF&∆TÊ÷Rê¢∞¢f"∆ˆ6¬“FÇ‰6ˆ÷&ñÊRÑ6ˆÁFWáB‰&6TFó&V7F˜'í¬'Fˆˆ«2"¬WÜV7WF&∆TÊ÷Rì∞¢ñbÑfñ∆R‰WÜó7G2Ü∆ˆ6¬íí&WGW&‚∆ˆ6√∞¢f"FÇ“VÁfó&ˆÊ÷VÁB‰vWDVÁfó&ˆÊ÷VÁEf&ñ&∆RÇ%DÇ"íÛÚ"#∞¢f˜&V6Çáf"Fó&V7F˜'íñ‚FÇÂ7∆óBÖFÇÂFÖ6W&F˜"¬7G&ñÊu7∆óD˜FñˆÁ2Â&V÷˜fTV◊GîVÁG&ñW2íê¢∞¢f"6ÊFñFFR“FÇ‰6ˆ÷&ñÊRÜFó&V7F˜'íÂG&ñ“Çr"rí¬WÜV7WF&∆TÊ÷Rì∞¢ñbÑfñ∆R‰WÜó7G2Ü6ÊFñFFRíí&WGW&‚6ÊFñFFS∞¢–¢ñbÜWÜV7WF&∆TÊ÷R‰WV«2Ç'6ˆffñ6RÊWÜR"¬7G&ñÊt6ˆ◊&ó6ˆ‚‰˜&FñÊƒñvÊ˜&T66Ríê¢∞¢f"&ˆw&‘fñ∆W2“VÁfó&ˆÊ÷VÁB‰vWDfˆ∆FW%FÇÑVÁfó&ˆÊ÷VÁBÂ7V6ñƒfˆ∆FW"Â&ˆw&‘fñ∆W2ì∞¢f"6ÊFñFFR“FÇ‰6ˆ÷&ñÊRá&ˆw&‘fñ∆W2¬$∆ñ'&Tˆffñ6R"¬'&ˆw&“"¬'6ˆffñ6RÊWÜR"ì∞¢ñbÑfñ∆R‰WÜó7G2Ü6ÊFñFFRíí&WGW&‚6ÊFñFFS∞¢–¢&WGW&‚ÁV∆√∞¢–ß–
+using System.Diagnostics;
+using System.IO;
+using System.IO.Compression;
+using System.Net;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Xml.Linq;
+using System.Windows;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using UglyToad.PdfPig;
+using UglyToad.PdfPig.DocumentLayoutAnalysis.TextExtractor;
+
+namespace OneClickConverter;
+
+public sealed record FormatChoice(string Name, string Extension);
+
+public static class ConversionService
+{
+    private static readonly string[] ImageFormats = ["png", "jpg", "bmp", "gif", "tiff"];
+    private static readonly string[] TextFormats = ["txt", "md", "html"];
+    private static readonly string[] TableFormats = ["csv", "tsv"];
+    private static readonly string[] SubtitleFormats = ["srt", "vtt"];
+    private static readonly string[] AudioFormats = ["mp3", "wav", "flac", "ogg", "m4a", "aac"];
+    private static readonly string[] VideoFormats = ["mp4", "mkv", "webm", "mov", "avi", "mp3"];
+    private static readonly string[] ArchiveFormats = ["zip", "gz"];
+    private static readonly HashSet<string> ImageInputs = [".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tif", ".tiff"];
+    private static readonly HashSet<string> TextInputs = [".txt", ".md", ".markdown", ".html", ".htm"];
+    private static readonly HashSet<string> TableInputs = [".csv", ".tsv"];
+    private static readonly HashSet<string> SubtitleInputs = [".srt", ".vtt"];
+    private static readonly HashSet<string> AudioInputs = [".mp3", ".wav", ".flac", ".ogg", ".m4a", ".aac", ".opus", ".wma", ".aiff", ".aif"];
+    private static readonly HashSet<string> VideoInputs = [".mp4", ".mkv", ".webm", ".mov", ".avi", ".wmv", ".mpeg", ".mpg"];
+    private static readonly HashSet<string> WordInputs = [".doc", ".docx", ".odt", ".rtf"];
+    private static readonly HashSet<string> SheetInputs = [".xls", ".xlsx", ".ods"];
+    private static readonly HashSet<string> SlideInputs = [".ppt", ".pptx", ".odp"];
+
+    public static string? FfmpegPath => FindExecutable("ffmpeg.exe");
+    public static string? LibreOfficePath => FindExecutable("soffice.exe") ?? FindExecutable("soffice");
+
+    public static bool IsSupportedInput(string path)
+    {
+        var extension = Path.GetExtension(path).ToLowerInvariant();
+        return ImageInputs.Contains(extension) || TextInputs.Contains(extension) || TableInputs.Contains(extension)
+            || SubtitleInputs.Contains(extension) || AudioInputs.Contains(extension) || VideoInputs.Contains(extension)
+            || WordInputs.Contains(extension) || SheetInputs.Contains(extension) || SlideInputs.Contains(extension)
+            || extension is ".pdf" or ".zip" or ".gz";
+    }
+
+    public static string? GetEngineHint(string path)
+    {
+        var extension = Path.GetExtension(path).ToLowerInvariant();
+        if ((AudioInputs.Contains(extension) || VideoInputs.Contains(extension)) && FfmpegPath is null)
+            return "Install FFmpeg to enable audio and video conversions. ZIP/GZIP compression is available now.";
+        if ((WordInputs.Contains(extension) || SheetInputs.Contains(extension) || SlideInputs.Contains(extension)) && LibreOfficePath is null)
+            return "Install LibreOffice to enable Office document conversions. ZIP/GZIP compression is available now.";
+        if (extension == ".pdf" && FindExecutable("pdftoppm.exe") is null)
+            return "PDF text conversions are ready. Install Poppler's pdftoppm tool to also export PDF pages as images.";
+        return null;
+    }
+
+    public static IReadOnlyList<FormatChoice> GetTargets(string path)
+    {
+        var extension = Path.GetExtension(path).ToLowerInvariant();
+        if (ImageInputs.Contains(extension)) return WithArchives(ImageFormats);
+        if (TextInputs.Contains(extension)) return WithArchives(TextFormats);
+        if (TableInputs.Contains(extension)) return WithArchives(TableFormats);
+        if (SubtitleInputs.Contains(extension)) return WithArchives(SubtitleFormats);
+        if (AudioInputs.Contains(extension) || VideoInputs.Contains(extension))
+            return FfmpegPath is not null ? WithArchives(VideoInputs.Contains(extension) ? VideoFormats : AudioFormats) : Choices(ArchiveFormats);
+        if (extension is ".zip" or ".gz") return [new FormatChoice("Extract", "extract")];
+        if (extension == ".pdf")
+        {
+            var pdfFormats = new List<string> { "docx", "txt", "md", "epub" };
+            if (FindExecutable("pdftoppm.exe") is not null) pdfFormats.AddRange(["jpg", "png"]);
+            return Choices(pdfFormats);
+        }
+        if (LibreOfficePath is not null)
+        {
+            if (WordInputs.Contains(extension)) return WithArchives(["pdf", "docx", "odt", "rtf", "txt", "html"]);
+            if (SheetInputs.Contains(extension)) return WithArchives(["pdf", "xlsx", "ods", "csv"]);
+            if (SlideInputs.Contains(extension)) return WithArchives(["pdf", "pptx", "odp"]);
+        }
+        if (extension != ".pdf") return Choices(ArchiveFormats);
+        return [];
+    }
+
+    public static void Convert(string sourcePath, string outputPath, string format)
+    {
+        var sourceExtension = Path.GetExtension(sourcePath).ToLowerInvariant();
+        if (format is "zip" or "gz") Compress(sourcePath, outputPath, format);
+        else if (ImageInputs.Contains(sourceExtension)) ConvertImage(sourcePath, outputPath, format);
+        else if (TextInputs.Contains(sourceExtension)) ConvertText(sourcePath, outputPath, format);
+        else if (TableInputs.Contains(sourceExtension)) ConvertTable(sourcePath, outputPath, format);
+        else if (SubtitleInputs.Contains(sourceExtension)) ConvertSubtitle(sourcePath, outputPath, format);
+        else if (format == "extract") ExtractArchive(sourcePath, outputPath);
+        else if (AudioInputs.Contains(sourceExtension) || VideoInputs.Contains(sourceExtension)) ConvertMedia(sourcePath, outputPath, format);
+        else if ((WordInputs.Contains(sourceExtension) || SheetInputs.Contains(sourceExtension) || SlideInputs.Contains(sourceExtension)) && LibreOfficePath is not null)
+            ConvertWithLibreOffice(sourcePath, outputPath, format);
+        else if (sourceExtension == ".pdf") ConvertPdf(sourcePath, outputPath, format);
+        else throw new NotSupportedException("No local conversion engine is available for this file type.");
+    }
+
+    private static IReadOnlyList<FormatChoice> Choices(IEnumerable<string> extensions) => extensions
+        .Select(ext => new FormatChoice(ext.ToUpperInvariant(), ext))
+        .ToArray();
+
+    private static IReadOnlyList<FormatChoice> WithArchives(IEnumerable<string> formats) => Choices(formats.Concat(ArchiveFormats).Distinct());
+
+    private static void ConvertImage(string sourcePath, string outputPath, string format)
+    {
+        BitmapFrame frame;
+        using (var input = File.OpenRead(sourcePath))
+        {
+            var decoder = BitmapDecoder.Create(input, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.OnLoad);
+            if (decoder.Frames.Count == 0) throw new InvalidDataException("No image frame was found.");
+            frame = decoder.Frames[0];
+        }
+
+        BitmapSource source = frame;
+        if (format == "jpg" && (source.Format == PixelFormats.Pbgra32 || source.Format == PixelFormats.Bgra32))
+        {
+            var visual = new DrawingVisual();
+            using (var context = visual.RenderOpen())
+            {
+                context.DrawRectangle(Brushes.White, null, new Rect(0, 0, source.PixelWidth, source.PixelHeight));
+                context.DrawImage(source, new Rect(0, 0, source.PixelWidth, source.PixelHeight));
+            }
+            var flattened = new RenderTargetBitmap(source.PixelWidth, source.PixelHeight, source.DpiX, source.DpiY, PixelFormats.Pbgra32);
+            flattened.Render(visual);
+            source = flattened;
+        }
+
+        BitmapEncoder encoder = format switch
+        {
+            "jpg" => new JpegBitmapEncoder { QualityLevel = 92 },
+            "bmp" => new BmpBitmapEncoder(),
+            "gif" => new GifBitmapEncoder(),
+            "tiff" => new TiffBitmapEncoder(),
+            _ => new PngBitmapEncoder()
+        };
+        encoder.Frames.Add(BitmapFrame.Create(source));
+        using var output = File.Create(outputPath);
+        encoder.Save(output);
+    }
+
+    private static void ConvertText(string sourcePath, string outputPath, string format)
+    {
+        var content = File.ReadAllText(sourcePath, Encoding.UTF8);
+        var sourceFormat = Path.GetExtension(sourcePath).ToLowerInvariant();
+        var plain = sourceFormat is ".html" or ".htm" ? HtmlToText(content) : MarkdownToText(content);
+        var converted = format switch
+        {
+            "html" => sourceFormat is ".md" or ".markdown" ? MarkdownToHtml(content) : $"<!doctype html><meta charset=\"utf-8\"><pre>{WebUtility.HtmlEncode(plain)}</pre>",
+            "md" => sourceFormat is ".html" or ".htm" ? HtmlToMarkdown(content) : content,
+            _ => plain
+        };
+        File.WriteAllText(outputPath, converted, new UTF8Encoding(false));
+    }
+
+    private static string HtmlToText(string html)
+    {
+        var withoutHidden = Regex.Replace(html, "<(script|style)\\b[^>]*>[\\s\\S]*?</\\1>", " ", RegexOptions.IgnoreCase);
+        var withBreaks = Regex.Replace(withoutHidden, "<(br|/p|/div|/h[1-6]|/li|/tr)\\b[^>]*>", "\n", RegexOptions.IgnoreCase);
+        return Regex.Replace(WebUtility.HtmlDecode(Regex.Replace(withBreaks, "<[^>]+>", " ")), "[ \\t]+", " ").Trim();
+    }
+
+    private static string MarkdownToText(string markdown) => Regex.Replace(markdown, @"(?m)^\s{0,3}#{1,6}\s*|[*_`~]", "").Trim();
+
+    private static string MarkdownToHtml(string markdown)
+    {
+        var blocks = Regex.Split(markdown.Trim(), @"\r?\n\s*\r?\n").Where(x => x.Length > 0);
+        var output = new StringBuilder("<!doctype html><meta charset=\"utf-8\"><main>\n");
+        foreach (var block in blocks)
+        {
+            var heading = Regex.Match(block, @"^\s{0,3}(#{1,6})\s+(.+)$", RegexOptions.Singleline);
+            if (heading.Success)
+            {
+                var level = heading.Groups[1].Length;
+                output.Append('<').Append('h').Append(level).Append('>').Append(InlineMarkdown(heading.Groups[2].Value.Trim())).Append("</h").Append(level).AppendLine(">");
+            }
+            else output.Append("<p>").Append(InlineMarkdown(block.Replace("\r", "").Replace("\n", " "))).AppendLine("</p>");
+        }
+        return output.AppendLine("</main>").ToString();
+    }
+
+    private static string InlineMarkdown(string text)
+    {
+        var value = WebUtility.HtmlEncode(text);
+        value = Regex.Replace(value, @"\*\*(.+?)\*\*", "<strong>$1</strong>");
+        value = Regex.Replace(value, @"\*(.+?)\*", "<em>$1</em>");
+        value = Regex.Replace(value, "`(.+?)`", "<code>$1</code>");
+        return value;
+    }
+
+    private static string HtmlToMarkdown(string html)
+    {
+        var value = Regex.Replace(html, @"<h([1-6])[^>]*>(.*?)</h\1>", m => $"{new string('#', int.Parse(m.Groups[1].Value))} {HtmlToText(m.Groups[2].Value)}\n\n", RegexOptions.IgnoreCase | RegexOptions.Singleline);
+        value = Regex.Replace(value, @"<(strong|b)[^>]*>(.*?)</\1>", "**$2**", RegexOptions.IgnoreCase | RegexOptions.Singleline);
+        value = Regex.Replace(value, @"<(em|i)[^>]*>(.*?)</\1>", "*$2*", RegexOptions.IgnoreCase | RegexOptions.Singleline);
+        value = Regex.Replace(value, @"</p\s*>", "\n\n", RegexOptions.IgnoreCase);
+        return HtmlToText(value).Replace("\n ", "\n").Trim();
+    }
+
+    private static void ConvertTable(string sourcePath, string outputPath, string format)
+    {
+        var sourceDelimiter = Path.GetExtension(sourcePath).Equals(".tsv", StringComparison.OrdinalIgnoreCase) ? '\t' : ',';
+        var targetDelimiter = format == "tsv" ? '\t' : ',';
+        var text = File.ReadAllText(sourcePath, Encoding.UTF8);
+        var rows = ParseDelimited(text, sourceDelimiter);
+        var converted = string.Join(Environment.NewLine, rows.Select(row => string.Join(targetDelimiter, row.Select(field => QuoteField(field, targetDelimiter)))));
+        File.WriteAllText(outputPath, converted, new UTF8Encoding(false));
+    }
+
+    private static List<List<string>> ParseDelimited(string text, char delimiter)
+    {
+        var rows = new List<List<string>>();
+        var row = new List<string>();
+        var field = new StringBuilder();
+        var quoted = false;
+        for (var i = 0; i < text.Length; i++)
+        {
+            var c = text[i];
+            if (c == '"' && quoted && i + 1 < text.Length && text[i + 1] == '"') { field.Append('"'); i++; }
+            else if (c == '"') quoted = !quoted;
+            else if (c == delimiter && !quoted) { row.Add(field.ToString()); field.Clear(); }
+            else if ((c == '\n' || c == '\r') && !quoted)
+            {
+                if (c == '\r' && i + 1 < text.Length && text[i + 1] == '\n') i++;
+                row.Add(field.ToString()); field.Clear(); rows.Add(row); row = [];
+            }
+            else field.Append(c);
+        }
+        if (field.Length > 0 || row.Count > 0) { row.Add(field.ToString()); rows.Add(row); }
+        return rows;
+    }
+
+    private static string QuoteField(string field, char delimiter) => field.Contains(delimiter) || field.Contains('"') || field.Contains('\n') || field.Contains('\r')
+        ? $"\"{field.Replace("\"", "\"\"")}\"" : field;
+
+    private static void ConvertSubtitle(string sourcePath, string outputPath, string format)
+    {
+        var content = File.ReadAllText(sourcePath, Encoding.UTF8).TrimStart('\uFEFF');
+        var sourceIsVtt = Path.GetExtension(sourcePath).Equals(".vtt", StringComparison.OrdinalIgnoreCase);
+        if (format == "vtt")
+        {
+            content = Regex.Replace(content, @"(?<!\d)(\d{2}:\d{2}:\d{2}),(\d{3})(?!\d)", "$1.$2");
+            if (!sourceIsVtt) content = "WEBVTT\n\n" + content;
+        }
+        else
+        {
+            content = Regex.Replace(content, @"(?<!\d)(\d{2}:\d{2}:\d{2})\.(\d{3})(?!\d)", "$1,$2");
+            if (sourceIsVtt) content = Regex.Replace(content, @"^WEBVTT[^\r\n]*(?:\r?\n|$)", "", RegexOptions.IgnoreCase);
+        }
+        File.WriteAllText(outputPath, content, new UTF8Encoding(false));
+    }
+
+    private static void Compress(string sourcePath, string outputPath, string format)
+    {
+        if (format == "zip")
+        {
+            using var archive = ZipFile.Open(outputPath, ZipArchiveMode.Create);
+            archive.CreateEntryFromFile(sourcePath, Path.GetFileName(sourcePath), CompressionLevel.Optimal);
+        }
+        else
+        {
+            using var input = File.OpenRead(sourcePath);
+            using var output = File.Create(outputPath);
+            using var gzip = new GZipStream(output, CompressionLevel.Optimal);
+            input.CopyTo(gzip);
+        }
+    }
+
+    private static void ExtractArchive(string sourcePath, string outputPath)
+    {
+        Directory.CreateDirectory(outputPath);
+        if (Path.GetExtension(sourcePath).Equals(".zip", StringComparison.OrdinalIgnoreCase))
+        {
+            ZipFile.ExtractToDirectory(sourcePath, outputPath);
+            return;
+        }
+        var extractedName = Path.GetFileNameWithoutExtension(sourcePath);
+        using var input = File.OpenRead(sourcePath);
+        using var gzip = new GZipStream(input, CompressionMode.Decompress, leaveOpen: false);
+        using var output = File.Create(Path.Combine(outputPath, extractedName));
+        gzip.CopyTo(output);
+    }
+
+    private static void ConvertMedia(string sourcePath, string outputPath, string format)
+    {
+        var executable = FfmpegPath ?? throw new NotSupportedException("Install FFmpeg or place ffmpeg.exe in the app's tools folder to convert audio and video.");
+        var startInfo = new ProcessStartInfo(executable) { UseShellExecute = false, CreateNoWindow = true, RedirectStandardError = true, RedirectStandardOutput = true };
+        startInfo.ArgumentList.Add("-y");
+        startInfo.ArgumentList.Add("-i");
+        startInfo.ArgumentList.Add(sourcePath);
+        if (format == "mp3" && VideoInputs.Contains(Path.GetExtension(sourcePath).ToLowerInvariant())) startInfo.ArgumentList.Add("-vn");
+        startInfo.ArgumentList.Add(outputPath);
+        using var process = Process.Start(startInfo) ?? throw new InvalidOperationException("FFmpeg could not be started.");
+        var errors = process.StandardError.ReadToEndAsync();
+        process.WaitForExit();
+        if (process.ExitCode != 0) throw new InvalidDataException(errors.GetAwaiter().GetResult());
+    }
+
+    private static void ConvertWithLibreOffice(string sourcePath, string outputPath, string format)
+    {
+        var temporaryDirectory = Path.Combine(Path.GetTempPath(), $"OneClickConverter-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(temporaryDirectory);
+        try
+        {
+            var startInfo = new ProcessStartInfo(LibreOfficePath!) { UseShellExecute = false, CreateNoWindow = true, RedirectStandardError = true, RedirectStandardOutput = true };
+            startInfo.ArgumentList.Add("--headless");
+            startInfo.ArgumentList.Add("--convert-to");
+            startInfo.ArgumentList.Add(format);
+            startInfo.ArgumentList.Add("--outdir");
+            startInfo.ArgumentList.Add(temporaryDirectory);
+            startInfo.ArgumentList.Add(sourcePath);
+            using var process = Process.Start(startInfo) ?? throw new InvalidOperationException("LibreOffice could not be started.");
+            var errors = process.StandardError.ReadToEndAsync();
+            process.WaitForExit();
+            var createdFile = Path.Combine(temporaryDirectory, $"{Path.GetFileNameWithoutExtension(sourcePath)}.{format}");
+            if (process.ExitCode != 0 || !File.Exists(createdFile)) throw new InvalidDataException(errors.GetAwaiter().GetResult());
+            File.Move(createdFile, outputPath);
+        }
+        finally { Directory.Delete(temporaryDirectory, true); }
+    }
+
+    private static void ConvertPdf(string sourcePath, string outputPath, string format)
+    {
+        if (format is "jpg" or "png")
+        {
+            var renderer = FindExecutable("pdftoppm.exe") ?? throw new NotSupportedException("Install Poppler's pdftoppm tool to render PDF pages as images.");
+            var startInfo = new ProcessStartInfo(renderer) { UseShellExecute = false, CreateNoWindow = true };
+            startInfo.ArgumentList.Add(format == "jpg" ? "-jpeg" : "-png");
+            startInfo.ArgumentList.Add("-r");
+            startInfo.ArgumentList.Add("150");
+            startInfo.ArgumentList.Add(sourcePath);
+            startInfo.ArgumentList.Add(Path.Combine(Path.GetDirectoryName(outputPath)!, Path.GetFileNameWithoutExtension(outputPath)));
+            using var render = Process.Start(startInfo) ?? throw new InvalidOperationException("pdftoppm could not be started.");
+            render.WaitForExit();
+            if (render.ExitCode != 0) throw new InvalidDataException("PDF page rendering failed.");
+            return;
+        }
+
+        string text;
+        using (var document = PdfDocument.Open(sourcePath))
+        {
+            text = string.Join(Environment.NewLine + Environment.NewLine,
+                document.GetPages().Select(page => ContentOrderTextExtractor.GetText(page)));
+        }
+        if (string.IsNullOrWhiteSpace(text))
+            throw new NotSupportedException("This PDF has no selectable text. Scanned PDFs need OCR, which is not included yet.");
+        switch (format)
+        {
+            case "docx": WriteDocx(text, outputPath); break;
+            case "epub": WriteEpub(text, outputPath, Path.GetFileNameWithoutExtension(sourcePath)); break;
+            case "md": File.WriteAllText(outputPath, text, new UTF8Encoding(false)); break;
+            default: File.WriteAllText(outputPath, text, new UTF8Encoding(false)); break;
+        }
+    }
+
+    private static void WriteDocx(string text, string outputPath)
+    {
+        XNamespace w = "http://schemas.openxmlformats.org/wordprocessingml/2006/main";
+        XNamespace contentTypes = "http://schemas.openxmlformats.org/package/2006/content-types";
+        XNamespace relationships = "http://schemas.openxmlformats.org/package/2006/relationships";
+        using var archive = ZipFile.Open(outputPath, ZipArchiveMode.Create);
+        WriteXmlEntry(archive, "[Content_Types].xml", new XDocument(
+            new XElement(contentTypes + "Types",
+                new XElement(contentTypes + "Default", new XAttribute("Extension", "rels"), new XAttribute("ContentType", "application/vnd.openxmlformats-package.relationships+xml")),
+                new XElement(contentTypes + "Default", new XAttribute("Extension", "xml"), new XAttribute("ContentType", "application/xml")),
+                new XElement(contentTypes + "Override", new XAttribute("PartName", "/word/document.xml"), new XAttribute("ContentType", "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml")))));
+        WriteXmlEntry(archive, "_rels/.rels", new XDocument(
+            new XElement(relationships + "Relationships",
+                new XElement(relationships + "Relationship", new XAttribute("Id", "rId1"), new XAttribute("Type", "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument"), new XAttribute("Target", "word/document.xml")))));
+        var body = new XElement(w + "body");
+        using var reader = new StringReader(text.Replace("\f", "\n"));
+        string? line;
+        while ((line = reader.ReadLine()) is not null)
+            body.Add(new XElement(w + "p", new XElement(w + "r", new XElement(w + "t", new XAttribute(XNamespace.Xml + "space", "preserve"), line))));
+        body.Add(new XElement(w + "sectPr"));
+        WriteXmlEntry(archive, "word/document.xml", new XDocument(new XElement(w + "document", body)));
+    }
+
+    private static void WriteEpub(string text, string outputPath, string title)
+    {
+        using var archive = ZipFile.Open(outputPath, ZipArchiveMode.Create);
+        var mimetype = archive.CreateEntry("mimetype", CompressionLevel.NoCompression);
+        using (var writer = new StreamWriter(mimetype.Open(), new UTF8Encoding(false))) writer.Write("application/epub+zip");
+        XNamespace container = "urn:oasis:names:tc:opendocument:xmlns:container";
+        WriteXmlEntry(archive, "META-INF/container.xml", new XDocument(new XElement(container + "container", new XAttribute("version", "1.0"),
+            new XElement(container + "rootfiles", new XElement(container + "rootfile", new XAttribute("full-path", "OEBPS/content.opf"), new XAttribute("media-type", "application/oebps-package+xml"))))));
+        XNamespace dc = "http://purl.org/dc/elements/1.1/";
+        XNamespace opf = "http://www.idpf.org/2007/opf";
+        WriteXmlEntry(archive, "OEBPS/content.opf", new XDocument(new XElement(opf + "package", new XAttribute("version", "3.0"), new XAttribute("unique-identifier", "book-id"),
+            new XElement(opf + "metadata", new XAttribute(XNamespace.Xmlns + "dc", dc), new XElement(dc + "identifier", new XAttribute("id", "book-id"), Guid.NewGuid().ToString()), new XElement(dc + "title", title), new XElement(dc + "language", "en")),
+            new XElement(opf + "manifest", new XElement(opf + "item", new XAttribute("id", "content"), new XAttribute("href", "content.xhtml"), new XAttribute("media-type", "application/xhtml+xml"))),
+            new XElement(opf + "spine", new XElement(opf + "itemref", new XAttribute("idref", "content"))))));
+        XNamespace html = "http://www.w3.org/1999/xhtml";
+        var paragraphs = text.Replace("\f", "\n").Split("\n\n", StringSplitOptions.RemoveEmptyEntries).Select(block => new XElement(html + "p", block.Trim()));
+        WriteXmlEntry(archive, "OEBPS/content.xhtml", new XDocument(new XElement(html + "html", new XElement(html + "head", new XElement(html + "title", title)), new XElement(html + "body", paragraphs))));
+    }
+
+    private static void WriteXmlEntry(ZipArchive archive, string name, XDocument document)
+    {
+        var entry = archive.CreateEntry(name, CompressionLevel.Optimal);
+        using var stream = entry.Open();
+        document.Save(stream);
+    }
+
+    private static string? FindExecutable(string executableName)
+    {
+        var local = Path.Combine(AppContext.BaseDirectory, "tools", executableName);
+        if (File.Exists(local)) return local;
+        var path = Environment.GetEnvironmentVariable("PATH") ?? "";
+        foreach (var directory in path.Split(Path.PathSeparator, StringSplitOptions.RemoveEmptyEntries))
+        {
+            var candidate = Path.Combine(directory.Trim('"'), executableName);
+            if (File.Exists(candidate)) return candidate;
+        }
+        if (executableName.Equals("soffice.exe", StringComparison.OrdinalIgnoreCase))
+        {
+            var programFiles = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
+            var candidate = Path.Combine(programFiles, "LibreOffice", "program", "soffice.exe");
+            if (File.Exists(candidate)) return candidate;
+        }
+        return null;
+    }
+}
