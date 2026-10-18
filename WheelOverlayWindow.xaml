@@ -4,26 +4,62 @@
         Width="480" Height="480" WindowStyle="None" AllowsTransparency="True"
         Background="Transparent" ShowInTaskbar="False" ShowActivated="False" Topmost="True"
         ResizeMode="NoResize" AllowDrop="True" DragOver="Wheel_DragOver" Drop="Wheel_Drop">
+    <Window.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="#604C52" BlurRadius="12" ShadowDepth="3" Opacity="0.12" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <Ellipse Width="424" Height="424" Fill="#F5FFFFFF" Stroke="#26FFFFFF" StrokeThickness="1"
-                 HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Ellipse Width="300" Height="300" Fill="Transparent" Stroke="#28E78A45" StrokeThickness="1"
-                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Ellipse Width="432" Height="432" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="#BFFFFFFF"
+                 StrokeThickness="1.5" Fill="#DDF6F3F8">
+            <Ellipse.Effect><DropShadowEffect Color="#5A5260" BlurRadius="36" ShadowDepth="10" Opacity="0.22" /></Ellipse.Effect>
+        </Ellipse>
+        <Ellipse Width="382" Height="382" HorizontalAlignment="Center" VerticalAlignment="Center"
+                 Stroke="#A6FFFFFF" StrokeThickness="1">
+            <Ellipse.Fill>
+                <RadialGradientBrush GradientOrigin="0.28,0.18">
+                    <GradientStop Color="#E8FFFFFF" Offset="0" />
+                    <GradientStop Color="#BFFFFFFF" Offset="0.72" />
+                    <GradientStop Color="#B7F4EAF7" Offset="1" />
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse Width="298" Height="298" HorizontalAlignment="Center" VerticalAlignment="Center"
+                 Fill="Transparent" Stroke="#48D883AD" StrokeThickness="1.2" />
+        <Ellipse Width="190" Height="190" HorizontalAlignment="Center" VerticalAlignment="Center"
+                 Fill="#22E9A16E" IsHitTestVisible="False">
+            <Ellipse.Effect><BlurEffect Radius="40" /></Ellipse.Effect>
+        </Ellipse>
         <Canvas x:Name="WheelCanvas" Width="480" Height="480" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Border Width="112" Height="112" CornerRadius="56" Background="#FF252822" BorderBrush="#FFE78A45"
-                BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">
+
+        <Border Width="118" Height="118" CornerRadius="59" BorderBrush="#E6FFFFFF" BorderThickness="1.5"
+                HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False">
+            <Border.Background>
+                <RadialGradientBrush GradientOrigin="0.3,0.22">
+                    <GradientStop Color="#FEFFFFFF" Offset="0" />
+                    <GradientStop Color="#EEF6F0F6" Offset="1" />
+                </RadialGradientBrush>
+            </Border.Background>
+            <Border.Effect><DropShadowEffect Color="#6A515F" BlurRadius="22" ShadowDepth="5" Opacity="0.17" /></Border.Effect>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock Text="DROP TO" FontSize="10" FontWeight="Bold" Foreground="#FFD9DAD4" HorizontalAlignment="Center" />
-                <TextBlock x:Name="SelectedFormatText" Text="FORMAT" FontSize="15" FontWeight="Bold" Foreground="White"
+                <TextBlock Text="DROP TO" FontSize="9" FontWeight="Bold" Foreground="#9D7C8D" HorizontalAlignment="Center" />
+                <TextBlock x:Name="SelectedFormatText" Text="FORMAT" FontSize="16" FontWeight="Bold" Foreground="#3B3340"
                            HorizontalAlignment="Center" Margin="0,5,0,0" />
             </StackPanel>
         </Border>
-        <Border VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="12,0,12,11" Background="#E9222520"
-                CornerRadius="12" Padding="12,7" MaxWidth="456" IsHitTestVisible="False">
+
+        <Border VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="12,0,12,10" Background="#E9FFFFFF"
+                BorderBrush="#CFFFFFFF" BorderThickness="1" CornerRadius="15" Padding="14,8" MaxWidth="456" IsHitTestVisible="False">
             <StackPanel HorizontalAlignment="Center">
-                <TextBlock Text="SAVE TO" Foreground="#FFFFBE8F" FontSize="9" FontWeight="Bold" HorizontalAlignment="Center" />
-                <TextBlock x:Name="OutputLocationText" Foreground="White" FontSize="11" TextTrimming="CharacterEllipsis"
-                           MaxWidth="420" HorizontalAlignment="Center" Margin="0,2,0,0" />
+                <TextBlock Text="SAVE LOCATION" Foreground="#A36D58" FontSize="8" FontWeight="Bold" HorizontalAlignment="Center" />
+                <TextBlock x:Name="OutputLocationText" Foreground="#514957" FontSize="10" TextTrimming="CharacterEllipsis"
+                           MaxWidth="420" HorizontalAlignment="Center" Margin="0,3,0,0" />
             </StackPanel>
         </Border>
     </Grid>

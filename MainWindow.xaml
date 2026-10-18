@@ -1,17 +1,23 @@
 <Window x:Class="OneClickConverter.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="One Click Converter" Height="760" Width="1040"
+        Title="One Click Converter" Height="820" Width="1120"
         Icon="Assets/converter.ico"
-        MinHeight="650" MinWidth="820" WindowStartupLocation="CenterScreen"
+        MinHeight="700" MinWidth="900" WindowStartupLocation="CenterScreen"
         Background="{StaticResource Canvas}" Foreground="{StaticResource Ink}" AllowDrop="True"
         DragOver="Window_DragOver" Drop="Window_Drop" Loaded="MainWindow_Loaded" Closing="MainWindow_Closing" Closed="MainWindow_Closed">
     <Window.Resources>
         <Style x:Key="SecondaryButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
-            <Setter Property="Background" Value="White" />
+            <Setter Property="Background" Value="#F5F3F7" />
             <Setter Property="Foreground" Value="{StaticResource Ink}" />
-            <Setter Property="BorderBrush" Value="{StaticResource Line}" />
+            <Setter Property="BorderBrush" Value="#E7E2EA" />
             <Setter Property="BorderThickness" Value="1" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#EEEAF2" />
+                    <Setter Property="BorderBrush" Value="#D8D0E0" />
+                </Trigger>
+            </Style.Triggers>
         </Style>
         <Style x:Key="PrimaryButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
             <Setter Property="Background" Value="{StaticResource Accent}" />
@@ -30,138 +36,235 @@
         <Style x:Key="FormatCombo" TargetType="ComboBox">
             <Setter Property="FontFamily" Value="Segoe UI" />
             <Setter Property="FontSize" Value="14" />
-            <Setter Property="Padding" Value="10,8" />
-            <Setter Property="MinWidth" Value="150" />
-            <Setter Property="Background" Value="White" />
+            <Setter Property="Padding" Value="13,10" />
+            <Setter Property="MinWidth" Value="175" />
+            <Setter Property="Background" Value="#FBFAFC" />
+            <Setter Property="Foreground" Value="{StaticResource Ink}" />
+            <Setter Property="BorderBrush" Value="#E7E2EA" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+        <Style x:Key="FileListItem" TargetType="ListViewItem">
+            <Setter Property="Padding" Value="10,9" />
+            <Setter Property="Margin" Value="2,2,2,5" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListViewItem">
+                        <Border x:Name="RowBorder" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="16" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="RowBorder" Property="Background" Value="#F7F3F8" />
+                                <Setter TargetName="RowBorder" Property="BorderBrush" Value="#EEE8F1" />
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="RowBorder" Property="Background" Value="#FFF4EA" />
+                                <Setter TargetName="RowBorder" Property="BorderBrush" Value="#F4D9C7" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
     </Window.Resources>
-    <Grid Margin="36,28">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="24" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="18" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="20" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="18" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
 
-        <DockPanel Grid.Row="0" LastChildFill="False">
-            <Border Width="42" Height="42" CornerRadius="13" Background="#FBE8D8" DockPanel.Dock="Left" Margin="0,0,13,0">
-                <Canvas Width="26" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Path Data="M 19,10 A 7,7 0 0 0 6,7" Stroke="{StaticResource Accent}" StrokeThickness="2.4" StrokeStartLineCap="Round" StrokeEndLineCap="Round" />
-                    <Polygon Points="5,3 11,5 6,10" Fill="{StaticResource Accent}" />
-                    <Path Data="M 7,16 A 7,7 0 0 0 20,19" Stroke="{StaticResource Accent}" StrokeThickness="2.4" StrokeStartLineCap="Round" StrokeEndLineCap="Round" />
-                    <Polygon Points="21,23 15,21 20,16" Fill="{StaticResource Accent}" />
-                </Canvas>
-            </Border>
-            <StackPanel VerticalAlignment="Center">
-                <TextBlock Text="One Click Converter" FontSize="19" FontWeight="SemiBold" />
-                <TextBlock Text="Private, offline file conversion for Windows" FontSize="12" Foreground="{StaticResource Muted}" Margin="0,3,0,0" />
-            </StackPanel>
-            <Border DockPanel.Dock="Right" Background="#E9F1E8" CornerRadius="12" Padding="11,7" VerticalAlignment="Center">
-                <StackPanel Orientation="Horizontal">
-                    <Ellipse Width="7" Height="7" Fill="#5D9C65" VerticalAlignment="Center" Margin="0,0,7,0" />
-                    <TextBlock Text="Files stay on this PC" FontSize="11" Foreground="#426C48" />
+    <Grid>
+        <Border Background="{StaticResource Canvas}" />
+        <Ellipse Width="480" Height="480" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-250,-150,0"
+                 Fill="#36E5B5D5" IsHitTestVisible="False">
+            <Ellipse.Effect><BlurEffect Radius="90" /></Ellipse.Effect>
+        </Ellipse>
+        <Ellipse Width="420" Height="420" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-245,0,0,-235"
+                 Fill="#38FFC68E" IsHitTestVisible="False">
+            <Ellipse.Effect><BlurEffect Radius="100" /></Ellipse.Effect>
+        </Ellipse>
+
+        <Grid Margin="34,27">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="22" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="15" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="12" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <DockPanel Grid.Row="0" LastChildFill="False" VerticalAlignment="Center">
+                <Border Width="48" Height="48" CornerRadius="17" Background="#19FFFFFF" BorderBrush="#A8FFFFFF"
+                        BorderThickness="1" DockPanel.Dock="Left" Margin="0,0,13,0" Effect="{DynamicResource SoftShadow}">
+                    <Image Source="Assets/converter.ico" Width="29" Height="29" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="One Click Converter" FontSize="20" FontWeight="Bold" />
+                    <TextBlock Text="A little more flow for every file." FontSize="12" Foreground="{StaticResource Muted}" Margin="0,3,0,0" />
                 </StackPanel>
-            </Border>
-        </DockPanel>
-
-        <Border Grid.Row="2" Background="White" BorderBrush="{StaticResource Line}" BorderThickness="1" CornerRadius="18" Padding="20">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-                <Border Grid.ColumnSpan="2" BorderBrush="#E8C9AE" BorderThickness="1.5" CornerRadius="13" Background="#FFFCF9"
-                        AllowDrop="True" DragOver="DropZone_DragOver" Drop="DropZone_Drop" Padding="18">
-                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <Border Width="46" Height="46" CornerRadius="14" Background="#FBE8D8" HorizontalAlignment="Center" Margin="0,0,0,10">
-                            <TextBlock Text="＋" FontSize="28" Foreground="{StaticResource Accent}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-4,0,0" />
-                        </Border>
-                        <TextBlock Text="Drop files here to get started" FontSize="17" FontWeight="SemiBold" HorizontalAlignment="Center" />
-                        <TextBlock Text="Choose an output format, then convert. Everything runs locally." FontSize="12" Foreground="{StaticResource Muted}" Margin="0,6,0,0" HorizontalAlignment="Center" />
-                        <Button Content="Browse files" Click="Browse_Click" Style="{StaticResource PrimaryButton}" Margin="0,14,0,0" Padding="19,9" />
+                <Border DockPanel.Dock="Right" Background="#BFFFFFFF" BorderBrush="#DFFFFFFF" BorderThickness="1"
+                        CornerRadius="16" Padding="13,9" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="8" Height="8" Fill="#55A67B" VerticalAlignment="Center" Margin="0,0,8,0" />
+                        <TextBlock Text="Private by design" FontSize="11" Foreground="#52645A" />
                     </StackPanel>
                 </Border>
-            </Grid>
-        </Border>
+            </DockPanel>
 
-        <DockPanel Grid.Row="4" LastChildFill="False">
-            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" VerticalAlignment="Center">
-                <TextBlock Text="Files" FontSize="15" FontWeight="SemiBold" />
-                <Border Background="#ECEAE4" CornerRadius="9" Padding="8,3" Margin="9,0,0,0">
-                    <TextBlock x:Name="FileCountText" Text="0" FontSize="11" Foreground="{StaticResource Muted}" />
-                </Border>
-            </StackPanel>
-            <Button Content="Clear all" DockPanel.Dock="Right" Click="Clear_Click" Background="Transparent" Foreground="{StaticResource Muted}" Padding="8,5" />
-        </DockPanel>
+            <Border Grid.Row="2" MinHeight="190" CornerRadius="28" BorderBrush="#BFFFFFFF" BorderThickness="1"
+                    AllowDrop="True" DragOver="DropZone_DragOver" Drop="DropZone_Drop" Padding="28">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FFF8ED" Offset="0" />
+                        <GradientStop Color="#F7EFF9" Offset="0.55" />
+                        <GradientStop Color="#E9F6F4" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Effect><DropShadowEffect Color="#5B485B" BlurRadius="30" ShadowDepth="8" Opacity="0.10" /></Border.Effect>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.15*" />
+                        <ColumnDefinition Width="0.85*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel VerticalAlignment="Center" Margin="5,0,22,0">
+                        <Border Background="#AFFFFFFF" BorderBrush="#CFFFFFFF" BorderThickness="1" CornerRadius="10"
+                                Padding="10,6" HorizontalAlignment="Left" Margin="0,0,0,13">
+                            <TextBlock Text="DROP · CONVERT · DONE" FontSize="9" FontWeight="Bold" Foreground="#9A5C43" />
+                        </Border>
+                        <TextBlock Text="Files, meet their&#x0a;new format." FontSize="31" FontWeight="Bold" LineHeight="36"
+                                   Foreground="#28242D" />
+                        <TextBlock Text="Drop files here, or browse your PC. We’ll find the formats that fit." FontSize="13"
+                                   Foreground="#716C78" TextWrapping="Wrap" Margin="0,10,0,0" MaxWidth="440" />
+                    </StackPanel>
+                    <Ellipse Grid.Column="1" Width="150" Height="150" HorizontalAlignment="Right" VerticalAlignment="Top"
+                             Margin="0,-63,-55,0" Fill="#28E6B8CE" IsHitTestVisible="False">
+                        <Ellipse.Effect><BlurEffect Radius="30" /></Ellipse.Effect>
+                    </Ellipse>
+                    <Border Grid.Column="1" MinHeight="132" CornerRadius="23" Background="#BFFFFFFF"
+                            BorderBrush="#DFFFFFFF" BorderThickness="1" Padding="20">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Border Width="56" Height="56" CornerRadius="19" Background="#FFF0E4" BorderBrush="#FFFFF7"
+                                    BorderThickness="2" VerticalAlignment="Center" Margin="0,0,15,0">
+                                <TextBlock Text="＋" FontSize="30" FontWeight="Light" Foreground="#D87548"
+                                           HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-4,0,0" />
+                            </Border>
+                            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                <TextBlock Text="Drop your files" FontSize="16" FontWeight="SemiBold" Foreground="#332E39" />
+                                <TextBlock Text="Images, PDFs, documents &amp; more" FontSize="11" Foreground="#827C89" Margin="0,5,0,13" />
+                                <Button Content="Browse files  ↗" Click="Browse_Click" Style="{StaticResource PrimaryButton}"
+                                        HorizontalAlignment="Left" Padding="17,9" />
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
 
-        <Border Grid.Row="4" Margin="0,38,0,0" Background="White" BorderBrush="{StaticResource Line}" BorderThickness="1" CornerRadius="14">
-            <Grid>
-                <ListView x:Name="FilesList" ItemsSource="{Binding Files}" BorderThickness="0" Background="Transparent" Padding="7">
-                    <ListView.ItemContainerStyle>
-                        <Style TargetType="ListViewItem">
-                            <Setter Property="Padding" Value="7,9" />
-                            <Setter Property="BorderThickness" Value="0,0,0,1" />
-                            <Setter Property="BorderBrush" Value="{StaticResource Line}" />
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                        </Style>
-                    </ListView.ItemContainerStyle>
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="42" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="110" />
-                                    <ColumnDefinition Width="90" />
-                                </Grid.ColumnDefinitions>
-                                <Border Width="34" Height="38" CornerRadius="7" Background="#F3F1EA" VerticalAlignment="Center">
-                                    <TextBlock Text="{Binding ExtensionLabel}" FontSize="9" FontWeight="Bold" Foreground="#78796F" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                </Border>
-                                <StackPanel Grid.Column="1" VerticalAlignment="Center">
-                                    <TextBlock Text="{Binding Name}" FontWeight="Medium" TextTrimming="CharacterEllipsis" />
-                                    <TextBlock Text="{Binding SizeLabel}" FontSize="11" Foreground="{StaticResource Muted}" Margin="0,3,0,0" />
-                                </StackPanel>
-                                <TextBlock Grid.Column="2" Text="{Binding Status}" FontSize="11" Foreground="{StaticResource Muted}" VerticalAlignment="Center" HorizontalAlignment="Right" />
-                                <Button Grid.Column="3" Content="Remove" Tag="{Binding}" Click="Remove_Click" Background="Transparent" Foreground="{StaticResource Muted}" Padding="8,4" HorizontalAlignment="Right" />
-                            </Grid>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <TextBlock x:Name="EmptyHint" Text="Your selected files will appear here" FontSize="13" Foreground="#A1A198" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" />
-            </Grid>
-        </Border>
-
-        <Border Grid.Row="6" Background="White" BorderBrush="{StaticResource Line}" BorderThickness="1" CornerRadius="14" Padding="16">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-                <StackPanel VerticalAlignment="Center" Margin="0,0,22,0">
-                    <TextBlock Text="Convert to" FontSize="11" Foreground="{StaticResource Muted}" />
-                    <ComboBox x:Name="FormatCombo" Style="{StaticResource FormatCombo}" Margin="0,6,0,0" />
+            <DockPanel Grid.Row="4" LastChildFill="False" VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" VerticalAlignment="Center">
+                    <TextBlock Text="Your files" FontSize="16" FontWeight="Bold" />
+                    <Border Background="#E9E3EF" CornerRadius="10" Padding="8,3" Margin="10,0,0,0">
+                        <TextBlock x:Name="FileCountText" Text="0" FontSize="11" FontWeight="SemiBold" Foreground="#6D5F7F" />
+                    </Border>
                 </StackPanel>
-                <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="0,0,15,0">
-                    <TextBlock Text="Save to" FontSize="11" Foreground="{StaticResource Muted}" />
-                    <DockPanel Margin="0,6,0,0">
-                        <Button Content="Choose folder" DockPanel.Dock="Right" Click="ChooseFolder_Click" Style="{StaticResource SecondaryButton}" Padding="12,8" />
-                        <TextBox x:Name="OutputFolderText" IsReadOnly="True" BorderThickness="0" Background="Transparent" FontFamily="Segoe UI" FontSize="12" Foreground="{StaticResource Ink}" VerticalContentAlignment="Center" />
-                    </DockPanel>
-                </StackPanel>
-                <Button x:Name="ConvertButton" Grid.Column="2" Content="Convert files  →" Click="Convert_Click" Style="{StaticResource PrimaryButton}" Padding="20,13" MinWidth="150" VerticalAlignment="Bottom" />
-            </Grid>
-        </Border>
+                <Button Content="Clear all" DockPanel.Dock="Right" Click="Clear_Click" Background="Transparent"
+                        Foreground="{StaticResource Muted}" Padding="10,6" />
+            </DockPanel>
 
-        <DockPanel Grid.Row="8" LastChildFill="False">
-            <TextBlock x:Name="StatusText" Text="Ready when you are." FontSize="11" Foreground="{StaticResource Muted}" VerticalAlignment="Center" />
-            <Button x:Name="OpenFolderButton" Content="Open output folder ↗" Click="OpenFolder_Click" DockPanel.Dock="Right" Background="Transparent" Foreground="{StaticResource Muted}" Padding="7,4" IsEnabled="False" />
-        </DockPanel>
+            <Border Grid.Row="6" Background="#BFFFFFFF" BorderBrush="#DFFFFFFF" BorderThickness="1" CornerRadius="22" Padding="10">
+                <Grid>
+                    <ListView x:Name="FilesList" ItemsSource="{Binding Files}" BorderThickness="0" Background="Transparent"
+                              Padding="3" ItemContainerStyle="{StaticResource FileListItem}"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="52" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="145" />
+                                        <ColumnDefinition Width="64" />
+                                    </Grid.ColumnDefinitions>
+                                    <Border Width="42" Height="46" CornerRadius="14" Background="#F1EDF6" BorderBrush="#E8E1EF"
+                                            BorderThickness="1" VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding ExtensionLabel}" FontSize="9" FontWeight="Bold" Foreground="#74637E"
+                                                   HorizontalAlignment="Center" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+                                    </Border>
+                                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="5,0,15,0">
+                                        <TextBlock Text="{Binding Name}" FontSize="13" FontWeight="SemiBold" Foreground="#302B35"
+                                                   TextTrimming="CharacterEllipsis" />
+                                        <TextBlock Text="{Binding SizeLabel}" FontSize="11" Foreground="#8A8490" Margin="0,4,0,0" />
+                                    </StackPanel>
+                                    <Border Grid.Column="2" Background="#F4F1F6" CornerRadius="10" Padding="10,6"
+                                            VerticalAlignment="Center" HorizontalAlignment="Right">
+                                        <TextBlock Text="{Binding Status}" FontSize="10" Foreground="#766D7F" />
+                                    </Border>
+                                    <Button Grid.Column="3" Content="×" FontSize="20" Tag="{Binding}" Click="Remove_Click"
+                                            Background="Transparent" Foreground="#938B99" Padding="6,2" HorizontalAlignment="Right"
+                                            VerticalAlignment="Center" ToolTip="Remove file" />
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackPanel x:Name="EmptyHint" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                IsHitTestVisible="False" Margin="18">
+                        <Border Width="48" Height="48" CornerRadius="17" Background="#F3EFF6" HorizontalAlignment="Center">
+                            <TextBlock Text="✦" FontSize="22" Foreground="#A89CB2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <TextBlock Text="Nothing here yet" FontSize="13" FontWeight="SemiBold" Foreground="#706B76"
+                                   HorizontalAlignment="Center" Margin="0,10,0,0" />
+                        <TextBlock Text="Drop a file above to get started" FontSize="11" Foreground="#A09AA4"
+                                   HorizontalAlignment="Center" Margin="0,4,0,0" />
+                    </StackPanel>
+                </Grid>
+            </Border>
 
+            <Border Grid.Row="8" Background="#DFFFFFFF" BorderBrush="#E8E2EB" BorderThickness="1" CornerRadius="21" Padding="15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="1.1*" />
+                        <ColumnDefinition Width="1.9*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Border Background="#F0EBF4" CornerRadius="13" Padding="11,8" Margin="0,0,15,0" VerticalAlignment="Center">
+                        <TextBlock Text="⇄" FontSize="19" Foreground="#816A90" />
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="0,0,16,0">
+                        <TextBlock Text="Convert to" FontSize="10" Foreground="#89818E" Margin="2,0,0,5" />
+                        <ComboBox x:Name="FormatCombo" Style="{StaticResource FormatCombo}" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" VerticalAlignment="Center" Margin="0,0,16,0">
+                        <TextBlock Text="Save to" FontSize="10" Foreground="#89818E" Margin="2,0,0,5" />
+                        <Border Background="#FBFAFC" BorderBrush="#E7E2EA" BorderThickness="1" CornerRadius="12" Padding="11,2">
+                            <DockPanel LastChildFill="True">
+                                <Button Content="Change" DockPanel.Dock="Right" Click="ChooseFolder_Click" Style="{StaticResource SecondaryButton}"
+                                        Padding="11,6" Margin="5,0,0,0" FontSize="11" />
+                                <TextBox x:Name="OutputFolderText" IsReadOnly="True" BorderThickness="0" Background="Transparent"
+                                         FontFamily="Segoe UI" FontSize="11" Foreground="#514B58" VerticalContentAlignment="Center"
+                                         TextWrapping="NoWrap" ToolTip="Output folder" />
+                            </DockPanel>
+                        </Border>
+                    </StackPanel>
+                    <Button x:Name="ConvertButton" Grid.Column="3" Content="Convert files  →" Click="Convert_Click"
+                            Style="{StaticResource PrimaryButton}" Padding="21,14" MinWidth="165" VerticalAlignment="Bottom" />
+                </Grid>
+            </Border>
+
+            <DockPanel Grid.Row="10" LastChildFill="False">
+                <TextBlock x:Name="StatusText" Text="Ready when you are." FontSize="11" Foreground="#827B88" VerticalAlignment="Center" />
+                <Button x:Name="OpenFolderButton" Content="Open output folder  ↗" Click="OpenFolder_Click" DockPanel.Dock="Right"
+                        Background="Transparent" Foreground="#766D7F" Padding="8,4" IsEnabled="False" />
+            </DockPanel>
+        </Grid>
     </Grid>
 </Window>
