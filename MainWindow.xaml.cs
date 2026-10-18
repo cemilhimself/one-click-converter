@@ -340,9 +340,7 @@ public partial class MainWindow : Window
 
     private static IReadOnlyList<FormatChoice> GetCommonTargets(IReadOnlyList<string> paths)
     {
-        if (paths.Count == 0) return Array.Empty<FormatChoice>();
-        return paths.Select(ConversionService.GetTargets)
-            .Aggregate((left, right) => left.Where(item => right.Any(other => other.Extension == item.Extension)).ToArray());
+        return ConversionService.GetTargetsForSelection(paths);
     }
 
     public async Task ConvertFromWheelAsync(IEnumerable<string> paths, string format)
@@ -359,7 +357,7 @@ public partial class MainWindow : Window
         {
             Title = "Choose files to convert",
             Multiselect = true,
-            Filter = "All files (*.*)|*.*|Supported formats|*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.tif;*.tiff;*.pdf;*.txt;*.md;*.markdown;*.html;*.htm;*.csv;*.tsv;*.srt;*.vtt;*.mp3;*.wav;*.flac;*.ogg;*.m4a;*.aac;*.opus;*.wma;*.aiff;*.aif;*.mp4;*.mkv;*.webm;*.mov;*.avi;*.wmv;*.mpeg;*.mpg;*.doc;*.docx;*.odt;*.rtf;*.xls;*.xlsx;*.ods;*.ppt;*.pptx;*.odp;*.zip;*.gz"
+            Filter = "All files (*.*)|*.*|Supported formats|*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.tif;*.tiff;*.webp;*.avif;*.heic;*.heif;*.svg;*.pdf;*.txt;*.md;*.markdown;*.html;*.htm;*.csv;*.tsv;*.srt;*.vtt;*.mp3;*.wav;*.flac;*.ogg;*.m4a;*.aac;*.opus;*.wma;*.aiff;*.aif;*.mp4;*.mkv;*.webm;*.mov;*.avi;*.wmv;*.mpeg;*.mpg;*.doc;*.docx;*.odt;*.rtf;*.xls;*.xlsx;*.ods;*.ppt;*.pptx;*.odp;*.zip;*.gz;*.tar;*.tgz;*.tar.gz;*.7z;*.rar"
         };
         if (dialog.ShowDialog(this) == true) AddFiles(dialog.FileNames);
     }
@@ -448,13 +446,34 @@ public partial class MainWindow : Window
         string? firstError = null;
         try
         {
+            if (format is "mergepdf" or "imagespdf")
+            {
+                var outputPath = GetUniqueOutputPath(_outputFolder, Path.GetFileNameWithoutExtension(Files[0].Path), "pdf");
+                foreach (var item in Files) item.Status = "Converting…";
+                try
+                {
+                    var paths = Files.Select(item => item.Path).ToArray();
+                    await Task.Run(() => ConversionService.ConvertSelection(paths, outputPath, format));
+                    foreach (var item in Files) item.Status = "Done";
+                    succeeded = Files.Count;
+                }
+                catch (Exception ex)
+                {
+                    foreach (var item in Files) item.Status = "Could not convert";
+                    firstError = ex.Message;
+                    failed = Files.Count;
+                }
+            }
+            else
+            {
             foreach (var item in Files)
             {
                 item.Status = "Converting…";
                 try
                 {
-                    var outputPath = GetUniqueOutputPath(_outputFolder, Path.GetFileNameWithoutExtension(item.Path), format);
-                    await Task.Run(() => ConversionService.Convert(item.Path, outputPath, format));
+                    var outputExtension = ConversionService.GetOutputExtension(item.Path, format);
+                    var outputPath = GetUniqueOutputPath(_outputFolder, Path.GetFileNameWithoutExtension(item.Path), outputExtension);
+                    await Task.Run(() => ConversionService.ConvertSelection([item.Path], outputPath, format));
                     item.Status = "Done";
                     succeeded++;
                 }
@@ -464,6 +483,7 @@ public partial class MainWindow : Window
                     firstError ??= ex.Message;
                     failed++;
                 }
+            }
             }
         }
         finally
@@ -479,10 +499,20 @@ public partial class MainWindow : Window
 
     private static string GetUniqueOutputPath(string folder, string name, string extension)
     {
-        var candidate = extension == "extract" ? Path.Combine(folder, $"{name}_extracted") : Path.Combine(folder, $"{name}.{extension}");
+        var candidate = extension switch
+        {
+            "extract" or "folder" => Path.Combine(folder, $"{name}_extracted"),
+            "pages" => Path.Combine(folder, $"{name}_pages"),
+            _ => Path.Combine(folder, $"{name}.{extension}")
+        };
         var counter = 2;
         while (File.Exists(candidate) || Directory.Exists(candidate))
-            candidate = extension == "extract" ? Path.Combine(folder, $"{name}_extracted ({counter++})") : Path.Combine(folder, $"{name} ({counter++}).{extension}");
+            candidate = extension switch
+            {
+                "extract" or "folder" => Path.Combine(folder, $"{name}_extracted ({counter++})"),
+                "pages" => Path.Combine(folder, $"{name}_pages ({counter++})"),
+                _ => Path.Combine(folder, $"{name} ({counter++}).{extension}")
+            };
         return candidate;
     }
 
@@ -532,3 +562,4 @@ public sealed class ConversionFile : INotifyPropertyChanged
         };
     }
 }
+
