@@ -4,14 +4,14 @@ A Windows desktop converter that processes files locally. The app itself does no
 
 ## Supported conversions
 
-- **Images:** PNG, JPEG, BMP, GIF, and TIFF. Animated GIFs and multi-page TIFFs export their first frame. Transparent pixels are flattened onto white for JPEG.
+- **Images:** PNG, JPEG, BMP, GIF, TIFF, WebP, and AVIF, plus SVG input. HEIC/HEIF input is enabled when the bundled image engine or FFmpeg can decode it. Center-square cropping is available; animated and multi-page sources use their first frame. Transparent pixels are flattened onto white for JPEG.
 - **Text and markup:** TXT, Markdown, and HTML.
 - **Tables:** CSV and TSV, with quoted delimiters preserved during conversion.
 - **Subtitles:** SRT and WebVTT timestamp conversion.
-- **Archives:** create ZIP or GZIP files from selected files; extract ZIP and GZIP files.
-- **PDF:** DOCX, TXT, Markdown, and EPUB targets using the bundled PDF reader. JPG/PNG page export appears when Poppler's `pdftoppm` is installed. PDF-to-DOCX keeps extracted text and does not preserve the original page layout. Scanned PDFs need OCR, which is not included yet.
-- **Audio and video:** MP3, WAV, FLAC, OGG, M4A, AAC, MP4, MKV, WebM, MOV, and AVI when FFmpeg is installed.
-- **Office documents:** Word, spreadsheet, and presentation conversions through LibreOffice when installed.
+- **Archives:** create ZIP, GZIP, TAR, or 7Z files; extract ZIP, GZIP, TAR/TAR.GZ, 7Z, and RAR. Multiple images can be combined into a PDF.
+- **PDF:** export selectable text to DOCX, PPTX, XLSX, TXT, Markdown, and EPUB; export every page to JPG/PNG; split a PDF into page files; or merge selected PDFs. Text-based Office exports preserve extracted text, not the original page layout. Scanned PDFs need OCR, which is not included yet.
+- **Audio and video:** MP3, WAV, FLAC, OGG, M4A, AAC, Opus, WMA, AIFF, MP4, MKV, WebM, MOV, AVI, and GIF when FFmpeg is installed. Video can be exported to GIF or MP3; a trim option saves the first 10 seconds.
+- **Office documents:** Word, spreadsheet, and presentation conversions through LibreOffice when installed. Presentations can also export to PDF/JPG/PNG.
 
 The output format list updates for the selected file types. For a mixed selection, it only offers formats shared by every selected file. Unsupported files are skipped.
 
@@ -21,9 +21,11 @@ Select a supported file in File Explorer and hold **Shift** to open the radial f
 
 ### Optional conversion engines
 
+The image engine and PDF renderer are bundled with the app. WebP/AVIF and HEIC/HEIF options are shown only when the bundled image engine can encode/decode the format. HEIC encoding may not be available on Windows because of codec and licensing support.
+
 FFmpeg enables audio and video conversion. The app looks for `ffmpeg.exe` in its `tools` folder or on `PATH`.
 
-LibreOffice enables Office document conversion. The app looks for `soffice` on `PATH` or in the standard Program Files location. `pdftoppm.exe` enables PDF page images and can be placed in the app's `tools` folder or on `PATH`.
+LibreOffice enables Office document conversion. The app looks for `soffice` on `PATH` or in the standard Program Files location. PDF page rendering, splitting, merging, and image-to-PDF conversion work without Poppler.
 
 ## Build on Windows
 
@@ -41,3 +43,4 @@ dotnet publish .\OneClickConverter.csproj -c Release -r win-x64 --self-contained
 ```
 
 The executable is written under `bin\Release\net8.0-windows\win-x64\publish\`.
+
