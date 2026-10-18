@@ -5,11 +5,21 @@ using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
-using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using UglyToad.PdfPig;
 using UglyToad.PdfPig.DocumentLayoutAnalysis.TextExtractor;
+using ImageMagick;
+using PDFtoImage;
+using PdfSharp.Pdf.IO;
+using PdfSharp.Drawing;
+using SharpCompress.Archives;
+using SharpCompress.Archives.Tar;
+using SharpCompress.Common;
+using SharpCompress.Compressors;
+using SharpCompress.Compressors.LZMA;
+using SharpCompress.Common.Options;
+using SharpCompress.Writers.SevenZip;
+using SharpCompress.Writers;
+using SharpCompress.Readers;
 
 namespace OneClickConverter;
 
@@ -17,19 +27,20 @@ public sealed record FormatChoice(string Name, string Extension);
 
 public static class ConversionService
 {
-    private static readonly string[] ImageFormats = ["png", "jpg", "bmp", "gif", "tiff"];
+    private static readonly string[] ImageFormats = ["png", "jpg", "bmp", "gif", "tiff", "webp", "avif", "heic"];
     private static readonly string[] TextFormats = ["txt", "md", "html"];
     private static readonly string[] TableFormats = ["csv", "tsv"];
     private static readonly string[] SubtitleFormats = ["srt", "vtt"];
-    private static readonly string[] AudioFormats = ["mp3", "wav", "flac", "ogg", "m4a", "aac"];
-    private static readonly string[] VideoFormats = ["mp4", "mkv", "webm", "mov", "avi", "mp3"];
-    private static readonly string[] ArchiveFormats = ["zip", "gz"];
-    private static readonly HashSet<string> ImageInputs = [".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tif", ".tiff"];
+    private static readonly string[] AudioFormats = ["mp3", "wav", "flac", "ogg", "m4a", "aac", "opus", "wma", "aiff"];
+    private static readonly string[] VideoFormats = ["mp4", "mkv", "webm", "mov", "avi", "gif", "mp3"];
+    private static readonly string[] ArchiveFormats = ["zip", "gz", "tar", "7z"];
+    private static readonly HashSet<string> ImageInputs = [".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tif", ".tiff", ".webp", ".avif", ".heic", ".heif", ".svg"];
     private static readonly HashSet<string> TextInputs = [".txt", ".md", ".markdown", ".html", ".htm"];
     private static readonly HashSet<string> TableInputs = [".csv", ".tsv"];
     private static readonly HashSet<string> SubtitleInputs = [".srt", ".vtt"];
     private static readonly HashSet<string> AudioInputs = [".mp3", ".wav", ".flac", ".ogg", ".m4a", ".aac", ".opus", ".wma", ".aiff", ".aif"];
-    private static readonly HashSet<string> VideoInputs = [".mp4", ".mkv", ".webm", ".mov", ".avi", ".wmv", ".mpeg", ".mpg"];
+    private static readonly HashSet<string> VideoInputs = [".mp4", ".mkv", ".webm", ".mov", ".avi", ".wmv", ".mpeg", ".mpg", ".gif"];
+    private static readonly HashSet<string> ArchiveInputs = [".zip", ".gz", ".tar", ".tgz", ".tar.gz", ".7z", ".rar"];
     private static readonly HashSet<string> WordInputs = [".doc", ".docx", ".odt", ".rtf"];
     private static readonly HashSet<string> SheetInputs = [".xls", ".xlsx", ".ods"];
     private static readonly HashSet<string> SlideInputs = [".ppt", ".pptx", ".odp"];
@@ -40,10 +51,10 @@ public static class ConversionService
     public static bool IsSupportedInput(string path)
     {
         var extension = Path.GetExtension(path).ToLowerInvariant();
-        return ImageInputs.Contains(extension) || TextInputs.Contains(extension) || TableInputs.Contains(extension)
+        return ImageInputs.Contains(extension) && SupportsImageRead(extension) || TextInputs.Contains(extension) || TableInputs.Contains(extension)
             || SubtitleInputs.Contains(extension) || AudioInputs.Contains(extension) || VideoInputs.Contains(extension)
             || WordInputs.Contains(extension) || SheetInputs.Contains(extension) || SlideInputs.Contains(extension)
-            || extension is ".pdf" or ".zip" or ".gz";
+            || extension == ".pdf" || ArchiveInputs.Contains(extension) || path.EndsWith(".tar.gz", StringComparison.OrdinalIgnoreCase);
     }
 
     public static string? GetEngineHint(string path)
@@ -53,47 +64,52 @@ public static class ConversionService
             return "Install FFmpeg to enable audio and video conversions. ZIP/GZIP compression is available now.";
         if ((WordInputs.Contains(extension) || SheetInputs.Contains(extension) || SlideInputs.Contains(extension)) && LibreOfficePath is null)
             return "Install LibreOffice to enable Office document conversions. ZIP/GZIP compression is available now.";
-        if (extension == ".pdf" && FindExecutable("pdftoppm.exe") is null)
-            return "PDF text conversions are ready. Install Poppler's pdftoppm tool to also export PDF pages as images.";
+        if (ImageInputs.Contains(extension) && !SupportsImageRead(extension) && FfmpegPath is null)
+            return "Install FFmpeg or a Windows HEIF image extension to read this image format.";
         return null;
     }
 
     public static IReadOnlyList<FormatChoice> GetTargets(string path)
     {
         var extension = Path.GetExtension(path).ToLowerInvariant();
-        if (ImageInputs.Contains(extension)) return WithArchives(ImageFormats);
+        if (ImageInputs.Contains(extension)) return [.. WithArchives(ImageFormats.Where(format => IsSupportedOutput(path, format))), new FormatChoice("Center crop to square", "crop")];
         if (TextInputs.Contains(extension)) return WithArchives(TextFormats);
         if (TableInputs.Contains(extension)) return WithArchives(TableFormats);
         if (SubtitleInputs.Contains(extension)) return WithArchives(SubtitleFormats);
         if (AudioInputs.Contains(extension) || VideoInputs.Contains(extension))
-            return FfmpegPath is not null ? WithArchives(VideoInputs.Contains(extension) ? VideoFormats : AudioFormats) : Choices(ArchiveFormats);
-        if (extension is ".zip" or ".gz") return [new FormatChoice("Extract", "extract")];
+            return FfmpegPath is not null
+                ? [.. WithArchives(VideoInputs.Contains(extension) ? VideoFormats : AudioFormats), new FormatChoice("Trim first 10 seconds", "trim")]
+                : Choices(ArchiveFormats);
+        if (ArchiveInputs.Contains(extension) || path.EndsWith(".tar.gz", StringComparison.OrdinalIgnoreCase)) return [new FormatChoice("Extract", "extract")];
         if (extension == ".pdf")
         {
-            var pdfFormats = new List<string> { "docx", "txt", "md", "epub" };
-            if (FindExecutable("pdftoppm.exe") is not null) pdfFormats.AddRange(["jpg", "png"]);
-            return Choices(pdfFormats);
+            var pdfFormats = new List<string> { "docx", "pptx", "xlsx", "txt", "md", "epub", "jpg", "png" };
+            return [.. Choices(pdfFormats), new FormatChoice("Split into pages", "splitpdf")];
         }
         if (LibreOfficePath is not null)
         {
             if (WordInputs.Contains(extension)) return WithArchives(["pdf", "docx", "odt", "rtf", "txt", "html"]);
             if (SheetInputs.Contains(extension)) return WithArchives(["pdf", "xlsx", "ods", "csv"]);
-            if (SlideInputs.Contains(extension)) return WithArchives(["pdf", "pptx", "odp"]);
+            if (SlideInputs.Contains(extension)) return WithArchives(["pdf", "pptx", "odp", "jpg", "png"]);
         }
-        if (extension != ".pdf") return Choices(ArchiveFormats);
+        if (extension != ".pdf" && !ArchiveInputs.Contains(extension)) return Choices(ArchiveFormats);
         return [];
     }
 
     public static void Convert(string sourcePath, string outputPath, string format)
     {
         var sourceExtension = Path.GetExtension(sourcePath).ToLowerInvariant();
-        if (format is "zip" or "gz") Compress(sourcePath, outputPath, format);
+        if (format is "zip" or "gz" or "tar" or "7z") Compress(sourcePath, outputPath, format);
         else if (ImageInputs.Contains(sourceExtension)) ConvertImage(sourcePath, outputPath, format);
         else if (TextInputs.Contains(sourceExtension)) ConvertText(sourcePath, outputPath, format);
         else if (TableInputs.Contains(sourceExtension)) ConvertTable(sourcePath, outputPath, format);
         else if (SubtitleInputs.Contains(sourceExtension)) ConvertSubtitle(sourcePath, outputPath, format);
         else if (format == "extract") ExtractArchive(sourcePath, outputPath);
+        else if (format == "splitpdf") SplitPdf(sourcePath, outputPath);
+        else if (format == "trim") ConvertMedia(sourcePath, outputPath, format);
+        else if (format == "crop") ConvertImage(sourcePath, outputPath, format);
         else if (AudioInputs.Contains(sourceExtension) || VideoInputs.Contains(sourceExtension)) ConvertMedia(sourcePath, outputPath, format);
+        else if (SlideInputs.Contains(sourceExtension) && format is "jpg" or "png") ConvertSlidesToImages(sourcePath, outputPath, format);
         else if ((WordInputs.Contains(sourceExtension) || SheetInputs.Contains(sourceExtension) || SlideInputs.Contains(sourceExtension)) && LibreOfficePath is not null)
             ConvertWithLibreOffice(sourcePath, outputPath, format);
         else if (sourceExtension == ".pdf") ConvertPdf(sourcePath, outputPath, format);
@@ -104,43 +120,122 @@ public static class ConversionService
         .Select(ext => new FormatChoice(ext.ToUpperInvariant(), ext))
         .ToArray();
 
+    public static IReadOnlyList<FormatChoice> GetTargetsForSelection(IReadOnlyList<string> paths)
+    {
+        if (paths.Count == 0) return Array.Empty<FormatChoice>();
+        var targets = paths.Select(GetTargets).Aggregate((left, right) => left.Where(item => right.Any(other => other.Extension == item.Extension)).ToArray()).ToList();
+        if (paths.Count > 1 && paths.All(path => Path.GetExtension(path).Equals(".pdf", StringComparison.OrdinalIgnoreCase)))
+            targets.Add(new FormatChoice("Merge selected PDFs", "mergepdf"));
+        if (paths.Count > 1 && paths.All(path => ImageInputs.Contains(Path.GetExtension(path).ToLowerInvariant())))
+            targets.Add(new FormatChoice("Merge into PDF", "imagespdf"));
+        return targets;
+    }
+
+    public static void ConvertSelection(IReadOnlyList<string> paths, string outputPath, string format)
+    {
+        if (format == "mergepdf") { MergePdfs(paths, outputPath); return; }
+        if (format == "imagespdf") { ImagesToPdf(paths, outputPath); return; }
+        if (paths.Count != 1) throw new NotSupportedException("This operation requires a single input file.");
+        Convert(paths[0], outputPath, format);
+    }
+
+    public static bool IsSupportedOutput(string sourcePath, string format)
+    {
+        if (format is "png" or "jpg" or "bmp" or "gif" or "tiff") return true;
+        var imageFormat = format == "jpg" ? "jpeg" : format;
+        return MagickNET.SupportedFormats.Any(item => item.Format.ToString().Equals(imageFormat, StringComparison.OrdinalIgnoreCase) && item.SupportsWriting);
+    }
+
+    private static bool SupportsImageRead(string extension)
+    {
+        var format = extension.TrimStart('.').ToLowerInvariant() switch
+        {
+            "jpg" or "jpeg" => "jpeg",
+            "tif" or "tiff" => "tiff",
+            "heif" => "heic",
+            _ => extension.TrimStart('.').ToLowerInvariant()
+        };
+        return MagickNET.SupportedFormats.Any(item => item.Format.ToString().Equals(format, StringComparison.OrdinalIgnoreCase) && item.SupportsReading)
+            || ((format is "heic" or "heif") && FfmpegPath is not null);
+    }
+
+    public static string GetOutputExtension(string sourcePath, string format) => format switch
+    {
+        "crop" => IsSupportedOutput(sourcePath, Path.GetExtension(sourcePath).TrimStart('.').ToLowerInvariant())
+            ? Path.GetExtension(sourcePath).TrimStart('.').ToLowerInvariant() : "png",
+        "trim" => Path.GetExtension(sourcePath).TrimStart('.').ToLowerInvariant(),
+        "splitpdf" => "pages",
+        "extract" => "folder",
+        "imagespdf" or "mergepdf" => "pdf",
+        _ => format
+    };
+
     private static IReadOnlyList<FormatChoice> WithArchives(IEnumerable<string> formats) => Choices(formats.Concat(ArchiveFormats).Distinct());
 
     private static void ConvertImage(string sourcePath, string outputPath, string format)
     {
-        BitmapFrame frame;
-        using (var input = File.OpenRead(sourcePath))
+        if (!MagickNET.SupportedFormats.Any(item => item.Format.ToString().Equals(Path.GetExtension(sourcePath).TrimStart('.'), StringComparison.OrdinalIgnoreCase) && item.SupportsReading)
+            && FfmpegPath is not null)
         {
-            var decoder = BitmapDecoder.Create(input, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.OnLoad);
-            if (decoder.Frames.Count == 0) throw new InvalidDataException("No image frame was found.");
-            frame = decoder.Frames[0];
-        }
-
-        BitmapSource source = frame;
-        if (format == "jpg" && (source.Format == PixelFormats.Pbgra32 || source.Format == PixelFormats.Bgra32))
-        {
-            var visual = new DrawingVisual();
-            using (var context = visual.RenderOpen())
+            var startInfo = new ProcessStartInfo(FfmpegPath) { UseShellExecute = false, CreateNoWindow = true };
+            startInfo.ArgumentList.Add("-y");
+            startInfo.ArgumentList.Add("-i");
+            startInfo.ArgumentList.Add(sourcePath);
+            if (format == "crop")
             {
-                context.DrawRectangle(Brushes.White, null, new Rect(0, 0, source.PixelWidth, source.PixelHeight));
-                context.DrawImage(source, new Rect(0, 0, source.PixelWidth, source.PixelHeight));
+                startInfo.ArgumentList.Add("-vf");
+                startInfo.ArgumentList.Add("crop=w='min(iw,ih)':h='min(iw,ih)'");
             }
-            var flattened = new RenderTargetBitmap(source.PixelWidth, source.PixelHeight, source.DpiX, source.DpiY, PixelFormats.Pbgra32);
-            flattened.Render(visual);
-            source = flattened;
+            startInfo.ArgumentList.Add("-frames:v");
+            startInfo.ArgumentList.Add("1");
+            startInfo.ArgumentList.Add(outputPath);
+            using var decoder = Process.Start(startInfo) ?? throw new InvalidOperationException("FFmpeg could not be started.");
+            decoder.WaitForExit();
+            if (decoder.ExitCode != 0) throw new InvalidDataException("FFmpeg could not read this image.");
+            return;
         }
-
-        BitmapEncoder encoder = format switch
+        using var image = new MagickImage(sourcePath);
+        if (format == "jpg" || format == "crop" && Path.GetExtension(outputPath).Equals(".jpg", StringComparison.OrdinalIgnoreCase))
         {
-            "jpg" => new JpegBitmapEncoder { QualityLevel = 92 },
-            "bmp" => new BmpBitmapEncoder(),
-            "gif" => new GifBitmapEncoder(),
-            "tiff" => new TiffBitmapEncoder(),
-            _ => new PngBitmapEncoder()
-        };
-        encoder.Frames.Add(BitmapFrame.Create(source));
-        using var output = File.Create(outputPath);
-        encoder.Save(output);
+            image.BackgroundColor = MagickColors.White;
+            image.Alpha(AlphaOption.Remove);
+        }
+        if (format == "crop")
+        {
+            var side = Math.Min(image.Width, image.Height);
+            image.Crop(new MagickGeometry((int)((image.Width - side) / 2), (int)((image.Height - side) / 2), side, side));
+            image.ResetPage();
+            image.Format = MagickFormat.Svg.Equals(image.Format) ? MagickFormat.Png : image.Format;
+        }
+        else
+        {
+            image.Format = format switch
+            {
+                "jpg" => MagickFormat.Jpeg,
+                "bmp" => MagickFormat.Bmp,
+                "gif" => MagickFormat.Gif,
+                "tiff" => MagickFormat.Tiff,
+                "webp" => MagickFormat.WebP,
+                "avif" => MagickFormat.Avif,
+                _ => MagickFormat.Png
+            };
+        }
+        if (format == "crop")
+        {
+            var outputFormat = Path.GetExtension(outputPath).TrimStart('.').ToLowerInvariant();
+            image.Format = outputFormat switch
+            {
+                "jpg" or "jpeg" => MagickFormat.Jpeg,
+                "bmp" => MagickFormat.Bmp,
+                "gif" => MagickFormat.Gif,
+                "tif" or "tiff" => MagickFormat.Tiff,
+                "webp" => MagickFormat.WebP,
+                "avif" => MagickFormat.Avif,
+                "heic" => MagickFormat.Heic,
+                _ => MagickFormat.Png
+            };
+        }
+        image.Write(outputPath);
     }
 
     private static void ConvertText(string sourcePath, string outputPath, string format)
@@ -261,12 +356,28 @@ public static class ConversionService
             using var archive = ZipFile.Open(outputPath, ZipArchiveMode.Create);
             archive.CreateEntryFromFile(sourcePath, Path.GetFileName(sourcePath), CompressionLevel.Optimal);
         }
-        else
+        else if (format == "gz")
         {
             using var input = File.OpenRead(sourcePath);
             using var output = File.Create(outputPath);
             using var gzip = new GZipStream(output, CompressionLevel.Optimal);
             input.CopyTo(gzip);
+        }
+        else if (format == "tar")
+        {
+            using var archive = TarArchive.CreateArchive();
+            archive.AddEntry(Path.GetFileName(sourcePath), sourcePath);
+            archive.SaveTo(outputPath, CompressionType.None);
+        }
+        else
+        {
+            using var writer = WriterFactory.OpenWriter(outputPath, ArchiveType.SevenZip, new SevenZipWriterOptions(CompressionType.LZMA2)
+            {
+                CompressHeader = true,
+                LzmaProperties = new LzmaEncoderProperties()
+            });
+            using var input = File.OpenRead(sourcePath);
+            writer.Write(Path.GetFileName(sourcePath), input, File.GetLastWriteTime(sourcePath));
         }
     }
 
@@ -278,11 +389,42 @@ public static class ConversionService
             ZipFile.ExtractToDirectory(sourcePath, outputPath);
             return;
         }
-        var extractedName = Path.GetFileNameWithoutExtension(sourcePath);
-        using var input = File.OpenRead(sourcePath);
-        using var gzip = new GZipStream(input, CompressionMode.Decompress, leaveOpen: false);
-        using var output = File.Create(Path.Combine(outputPath, extractedName));
-        gzip.CopyTo(output);
+        var root = Path.GetFullPath(outputPath).TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar;
+        if (Path.GetExtension(sourcePath).Equals(".rar", StringComparison.OrdinalIgnoreCase)
+            || sourcePath.EndsWith(".tar.gz", StringComparison.OrdinalIgnoreCase)
+            || Path.GetExtension(sourcePath).Equals(".tgz", StringComparison.OrdinalIgnoreCase))
+        {
+            using var stream = File.OpenRead(sourcePath);
+            using var reader = ReaderFactory.OpenReader(stream);
+            while (reader.MoveToNextEntry())
+            {
+                if (reader.Entry.IsDirectory || string.IsNullOrWhiteSpace(reader.Entry.Key)) continue;
+                var target = ResolveArchiveTarget(root, reader.Entry.Key);
+                Directory.CreateDirectory(Path.GetDirectoryName(target)!);
+                using var input = reader.OpenEntryStream();
+                using var output = File.Create(target);
+                input.CopyTo(output);
+            }
+            return;
+        }
+
+        using var archive = ArchiveFactory.OpenArchive(sourcePath);
+        foreach (var entry in archive.Entries.Where(item => !item.IsDirectory && !string.IsNullOrWhiteSpace(item.Key)))
+        {
+            var target = ResolveArchiveTarget(root, entry.Key!);
+            Directory.CreateDirectory(Path.GetDirectoryName(target)!);
+            using var input = entry.OpenEntryStream();
+            using var output = File.Create(target);
+            input.CopyTo(output);
+        }
+    }
+
+    private static string ResolveArchiveTarget(string root, string entryName)
+    {
+        var target = Path.GetFullPath(Path.Combine(root, entryName.Replace('/', Path.DirectorySeparatorChar)));
+        if (!target.StartsWith(root, StringComparison.OrdinalIgnoreCase))
+            throw new InvalidDataException("The archive contains a path outside the extraction folder.");
+        return target;
     }
 
     private static void ConvertMedia(string sourcePath, string outputPath, string format)
@@ -292,7 +434,18 @@ public static class ConversionService
         startInfo.ArgumentList.Add("-y");
         startInfo.ArgumentList.Add("-i");
         startInfo.ArgumentList.Add(sourcePath);
+        if (format == "trim")
+        {
+            startInfo.ArgumentList.Add("-t");
+            startInfo.ArgumentList.Add("10");
+        }
         if (format == "mp3" && VideoInputs.Contains(Path.GetExtension(sourcePath).ToLowerInvariant())) startInfo.ArgumentList.Add("-vn");
+        if (format == "gif")
+        {
+            startInfo.ArgumentList.Add("-vf");
+            startInfo.ArgumentList.Add("fps=12,scale=720:-1:flags=lanczos");
+            startInfo.ArgumentList.Add("-an");
+        }
         startInfo.ArgumentList.Add(outputPath);
         using var process = Process.Start(startInfo) ?? throw new InvalidOperationException("FFmpeg could not be started.");
         var errors = process.StandardError.ReadToEndAsync();
@@ -327,21 +480,27 @@ public static class ConversionService
     {
         if (format is "jpg" or "png")
         {
-            var renderer = FindExecutable("pdftoppm.exe") ?? throw new NotSupportedException("Install Poppler's pdftoppm tool to render PDF pages as images.");
-            var startInfo = new ProcessStartInfo(renderer) { UseShellExecute = false, CreateNoWindow = true };
-            startInfo.ArgumentList.Add(format == "jpg" ? "-jpeg" : "-png");
-            startInfo.ArgumentList.Add("-r");
-            startInfo.ArgumentList.Add("150");
-            startInfo.ArgumentList.Add(sourcePath);
-            startInfo.ArgumentList.Add(Path.Combine(Path.GetDirectoryName(outputPath)!, Path.GetFileNameWithoutExtension(outputPath)));
-            using var render = Process.Start(startInfo) ?? throw new InvalidOperationException("pdftoppm could not be started.");
-            render.WaitForExit();
-            if (render.ExitCode != 0) throw new InvalidDataException("PDF page rendering failed.");
+            using var input = File.OpenRead(sourcePath);
+            var pageCount = Conversion.GetPageCount(input, leaveOpen: true, password: null);
+            input.Position = 0;
+            var options = new PDFtoImage.RenderOptions { Dpi = 300 };
+            var pages = Conversion.ToImages(input, Enumerable.Range(0, pageCount), leaveOpen: false, password: null, options);
+            var stem = Path.Combine(Path.GetDirectoryName(outputPath)!, Path.GetFileNameWithoutExtension(outputPath));
+            var index = 0;
+            foreach (var page in pages)
+            {
+                var pagePath = pageCount == 1 || index == 0 ? outputPath : $"{stem}-{index + 1:000}.{format}";
+                using (page)
+                using (var encoded = page.Encode(format == "jpg" ? SkiaSharp.SKEncodedImageFormat.Jpeg : SkiaSharp.SKEncodedImageFormat.Png, 95))
+                using (var output = File.Create(pagePath))
+                    encoded.SaveTo(output);
+                index++;
+            }
             return;
         }
 
         string text;
-        using (var document = PdfDocument.Open(sourcePath))
+        using (var document = UglyToad.PdfPig.PdfDocument.Open(sourcePath))
         {
             text = string.Join(Environment.NewLine + Environment.NewLine,
                 document.GetPages().Select(page => ContentOrderTextExtractor.GetText(page)));
@@ -352,9 +511,77 @@ public static class ConversionService
         {
             case "docx": WriteDocx(text, outputPath); break;
             case "epub": WriteEpub(text, outputPath, Path.GetFileNameWithoutExtension(sourcePath)); break;
+            case "pptx":
+                BasicOfficeWriter.WritePresentation(text, outputPath);
+                break;
+            case "xlsx": BasicOfficeWriter.WriteSpreadsheet(text, outputPath); break;
             case "md": File.WriteAllText(outputPath, text, new UTF8Encoding(false)); break;
             default: File.WriteAllText(outputPath, text, new UTF8Encoding(false)); break;
         }
+    }
+
+    private static void SplitPdf(string sourcePath, string outputFolder)
+    {
+        Directory.CreateDirectory(outputFolder);
+        using var source = PdfReader.Open(sourcePath, PdfDocumentOpenMode.Import);
+        for (var index = 0; index < source.PageCount; index++)
+        {
+            using var pageDocument = new PdfSharp.Pdf.PdfDocument();
+            pageDocument.AddPage(source.Pages[index]);
+            pageDocument.Save(Path.Combine(outputFolder, $"page-{index + 1:000}.pdf"));
+        }
+    }
+
+    private static void ImagesToPdf(IReadOnlyList<string> sourcePaths, string outputPath)
+    {
+        using var document = new PdfSharp.Pdf.PdfDocument();
+        var temporaryDirectory = Path.Combine(Path.GetTempPath(), $"OneClickConverter-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(temporaryDirectory);
+        try
+        {
+            for (var index = 0; index < sourcePaths.Count; index++)
+            {
+                var imagePath = Path.Combine(temporaryDirectory, $"image-{index + 1:000}.png");
+                using (var image = new MagickImage(sourcePaths[index]))
+                {
+                    image.Format = MagickFormat.Png;
+                    image.Write(imagePath);
+                }
+                using var pageImage = XImage.FromFile(imagePath);
+                var page = document.AddPage();
+                page.Width = XUnit.FromPoint(pageImage.PixelWidth * 0.75);
+                page.Height = XUnit.FromPoint(pageImage.PixelHeight * 0.75);
+                using var graphics = XGraphics.FromPdfPage(page);
+                graphics.DrawImage(pageImage, 0, 0, page.Width.Point, page.Height.Point);
+            }
+            document.Save(outputPath);
+        }
+        finally { Directory.Delete(temporaryDirectory, true); }
+    }
+
+    private static void MergePdfs(IReadOnlyList<string> sourcePaths, string outputPath)
+    {
+        if (sourcePaths.Count < 2) throw new ArgumentException("Select at least two PDF files to merge.");
+        using var merged = new PdfSharp.Pdf.PdfDocument();
+        foreach (var sourcePath in sourcePaths)
+        {
+            using var source = PdfReader.Open(sourcePath, PdfDocumentOpenMode.Import);
+            foreach (var page in source.Pages) merged.AddPage(page);
+        }
+        merged.Save(outputPath);
+    }
+
+    private static void ConvertSlidesToImages(string sourcePath, string outputPath, string format)
+    {
+        var temporaryDirectory = Path.Combine(Path.GetTempPath(), $"OneClickConverter-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(temporaryDirectory);
+        try
+        {
+            var pdfPath = Path.Combine(temporaryDirectory, "slides.pdf");
+            ConvertWithLibreOffice(sourcePath, pdfPath, "pdf");
+            ConvertPdf(pdfPath, outputPath, format);
+        }
+        finally { Directory.Delete(temporaryDirectory, true); }
     }
 
     private static void WriteDocx(string text, string outputPath)
@@ -425,3 +652,4 @@ public static class ConversionService
         return null;
     }
 }
+
