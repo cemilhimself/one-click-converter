@@ -33,14 +33,21 @@ public partial class WheelOverlayWindow : Window
         _buttons.Clear();
 
         const double center = 240;
-        const double radius = 156;
+        var useTwoRings = _targets.Count > 8;
+        var innerCount = useTwoRings ? _targets.Count - 8 : _targets.Count;
         for (var index = 0; index < _targets.Count; index++)
         {
-            var angle = -Math.PI / 2 + Math.Tau * index / _targets.Count;
+            var isOuter = useTwoRings && index >= innerCount;
+            var ringIndex = isOuter ? index - innerCount : index;
+            var ringCount = isOuter ? 8 : innerCount;
+            var angle = -Math.PI / 2 + Math.Tau * ringIndex / ringCount;
+            var radius = isOuter ? 178 : useTwoRings ? 100 : 156;
+            var buttonWidth = useTwoRings ? 82 : 102;
+            var buttonHeight = useTwoRings ? 46 : 54;
             var button = new WpfButton
             {
-                Width = 102,
-                Height = 54,
+                Width = buttonWidth,
+                Height = buttonHeight,
                 Content = new StackPanel
                 {
                     IsHitTestVisible = false,
@@ -117,16 +124,16 @@ public partial class WheelOverlayWindow : Window
 
     private static IReadOnlyList<FormatChoice> GetTargetsForAll(IReadOnlyList<string> paths)
     {
-        if (paths.Count == 0) return Array.Empty<FormatChoice>();
-        return paths.Select(ConversionService.GetTargets)
-            .Aggregate((left, right) => left.Where(item => right.Any(other => other.Extension == item.Extension)).ToArray());
+        return ConversionService.GetTargetsForSelection(paths);
     }
 
     private void UpdateHighlight(System.Windows.Point point)
     {
         var dx = point.X - 240;
         var dy = point.Y - 240;
-        if (Math.Sqrt(dx * dx + dy * dy) < 78)
+        var radius = Math.Sqrt(dx * dx + dy * dy);
+        var twoRings = _targets.Count > 8;
+        if (radius < 78 || twoRings && radius > 220)
         {
             _highlightedIndex = -1;
             SelectedFormatText.Text = "FORMAT";
@@ -136,7 +143,18 @@ public partial class WheelOverlayWindow : Window
 
         var angle = Math.Atan2(dy, dx) + Math.PI / 2;
         if (angle < 0) angle += Math.Tau;
-        _highlightedIndex = (int)Math.Floor((angle / Math.Tau * _targets.Count) + 0.5) % _targets.Count;
+        if (!twoRings)
+        {
+            _highlightedIndex = (int)Math.Floor((angle / Math.Tau * _targets.Count) + 0.5) % _targets.Count;
+        }
+        else
+        {
+            var innerCount = _targets.Count - 8;
+            if (radius < 139)
+                _highlightedIndex = (int)Math.Floor((angle / Math.Tau * innerCount) + 0.5) % innerCount;
+            else
+                _highlightedIndex = innerCount + (int)Math.Floor((angle / Math.Tau * 8) + 0.5) % 8;
+        }
         SelectedFormatText.Text = _targets[_highlightedIndex].Extension.ToUpperInvariant();
         PaintButtons();
     }
@@ -153,3 +171,4 @@ public partial class WheelOverlayWindow : Window
         }
     }
 }
+
